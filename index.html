@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>LO Lubaczów </title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <nav class="sticky">
+        <div class="nav-wrapper z-depth-5">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
+                    <ul id='dropdown1' class='dropdown-content z-depth-5'>
+                        <li><a href="#!">O szkole</a></li>
+                        <li><a href="#!">Kadra/pracownicy</a></li>
+                        <li><a href="#!">Klasy/profile</a></li>
+                        <li><a href="#!">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Plan lekcji</a></li>
+                <li><a href="#">Dziennik</a></li>
+                <li><a class="dropdown-button" data-activates='dropdown2' href="#">Dla gimnazjalisty</a>
+                    <ul id='dropdown2' class='dropdown-content z-depth-5'>
+                        <li><a href="#!">Dlaczego my ?</a></li>
+                        <li><a href="#!">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown3' href="#">Dla ucznia</a>
+                    <ul id='dropdown3' class='dropdown-content z-depth-5'>
+                        <li><a href="#!">Samorząd uczniowski</a></li>
+                        <li><a href="#!">Podręczniki</a></li>
+                        <li><a href="#!">Matura</a></li>
+                        <li><a href="#!">Stypendia</a></li>
+                        <li><a href="#!">Galerie</a></li>
+                        <li><a href="#!">//cos tam po rusku</a></li>
+                        <li><a href="#!">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown4' href="#">Dla rodzica</a>
+                    <ul id='dropdown4' class='dropdown-content z-depth-5'>
+                        <li><a href="#!">Współpraca z rodzicami</a></li>
+                        <li><a href="#!">Konsultacje</a></li>
+                        <li><a href="#!">Rada Rodziców</a></li>
+                        <li><a href="#!">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
+                    <ul id='dropdown-1' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">O szkole</a></li>
+                        <li><a href="#!">Kadra/pracownicy</a></li>
+                        <li><a href="#!">Klasy/profile</a></li>
+                        <li><a href="#!">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Plan lekcji</a></li>
+                <li><a href="#">Dziennik</a></li>
+                <li><a class="dropdown-button" data-activates='dropdown-2' href="#">Dla gimnazjalisty</a>
+                    <ul id='dropdown-2' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Dlaczego my ?</a></li>
+                        <li><a href="#!">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-3' href="#">Dla ucznia</a>
+                    <ul id='dropdown-3' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Samorząd uczniowski</a></li>
+                        <li><a href="#!">Podręczniki</a></li>
+                        <li><a href="#!">Matura</a></li>
+                        <li><a href="#!">Stypendia</a></li>
+                        <li><a href="#!">Galerie</a></li>
+                        <li><a href="#!">//cos tam po rusku</a></li>
+                        <li><a href="#!">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-4' href="#">Dla rodzica</a>
+                    <ul id='dropdown-4' class='dropdown-content z-depth-4'>
+                        <li id="to"><a href="#!">Współpraca z rodzicami</a></li>
+                        <li><a href="#!">Konsultacje</a></li>
+                        <li><a href="#!">Rada Rodziców</a></li>
+                        <li><a href="#!">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="parallax-container materialboxed">
+        <div class="parallax"><img src="wallapaper.jpg"></div>
+    </div>
+    <div class="row center">
+        <div class="section-title">
+            <h4>Aktualności</h4>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
+        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a>
+    </div>
+    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important">
+        <div class="tap-target-content center">
+            <h5>Dzisiejsi szczęściarze mają numery:</h5>
+            <p style=" color: #f39c12; font-size: 24px; margin-bottom: 0px;">5</p>
+            <p style=" color: #f39c12; font-size: 24px; margin-top: 25px;">25</p>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 maja 2017r.</p>
+                        <p>W dniu 23 maja 2017 roku odbył się w naszej szkole Konkurs Ortograficzny z Języka Francuskiego. W konkursie wzięli udział uczniowie.</p>
+                    </div>
+                    <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
+                        <p>2 czerwca w IV LO w Tarnowie odbył się Konkurs Piosenki Francuskiej . W tegorocznej XIX już edycji konkursu uczestniczyło 50 uczniów </p>
+                    </div>
+                    <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
+                        <p>Po zapoznaniu się z ofertą naszej szkoły zapraszamy Was do wyboru języków obcych ( przy składaniu oryginałów świadectw ukończenia gimnazjum) których chcielibyście się uczyć.</p>
+                    </div>
+                    <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 maja 2017r.</p>
+                        <p>W dniu 23 maja 2017 roku odbył się w naszej szkole Konkurs Ortograficzny z Języka Francuskiego. W konkursie wzięli udział uczniowie.</p>
+                    </div>
+                    <<div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
+                        <p>2 czerwca w IV LO w Tarnowie odbył się Konkurs Piosenki Francuskiej . W tegorocznej XIX już edycji konkursu uczestniczyło 50 uczniów </p>
+                    </div>
+                    <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card small z-depth-4">
+                    <div class="card-image">
+                        <img class="materialboxed" src="wallapaper.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
+                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
+                        <p>Po zapoznaniu się z ofertą naszej szkoły zapraszamy Was do wyboru języków obcych ( przy składaniu oryginałów świadectw ukończenia gimnazjum) których chcielibyście się uczyć.</p>
+                    </div>
+                    <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- O NAS -->
+    <div class="onas">
+        <div class="row center" style="padding-top: 25px;">
+            <div class="section-title">
+                <h4>O nas</h4>
+            </div>
+        </div>
+        <div class="card" id="onascard" style="margin-top: 45px;">
+            <div class="card-content center z-depth-4">
+                <span style="font-size: 20px;">Liceum Ogólnokształcące im. Tadeusza Kościuszki w Lubaczowie to szkoła z bogatą tradycją, ale również nowoczesna, odpowiednia dla ludzi śmiało patrzących w przyszłość i nielękających się wyzwań.</span>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#test4">Historia szkoły</a></li>
+                    <li class="tab"><a class="active" href="#test5">Szkoła dziś</a></li>
+                    <li class="tab"><a href="#test6">Patron</a></li>
+                </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+                <div id="test4">
+                    <div class="row">
+                        <div class="col l7 m12 s12" style="margin-bottom: 40px;">
+                            <p>Zalążkiem gimnazjum i liceum były kursy gimnazjalne, które zostały zorganizowane w 1913 r. z inicjatywy Towarzystwa Szkoły Średniej. Działalność kursów przerwała I wojna. W roku 1931 kurator okręgu szkolnego uznał kursy gimnazjalne za prywatne gimnazjum i nadał im nazwę "Gimnazjum Koedukacyjne Powiatowego Towarzystwa Szkoły Średniej w Lubaczowie". W 1936 r. prywatne lubaczowskie gimnazjum otrzymało pełne prawa państwowych gimnazjów ogólnokształcących.</p>
+                            <p>Jesienią 1938 r. Powiatowe Towarzystwo Szkoły Średniej energicznie kierowane przez dr Henryka Frisera rozpoczęło budowę własnego budynku przy ul. Kościuszki. 11 listopada w 20 rocznicę odzyskania niepodległości odbyła się uroczystość poświęcenia kamienia węgielnego oraz nadania sztandaru. Wybuch wojny 1 września 1939 r. przerwał zaawansowaną już budowę.</p>
+                            <p>Od 1946 r. starano się o dokończenie budowy gimnazjum, którą rozpoczęto przed wojną. Po przejęciu tego budynku na własność Skarbu Państwa remont obiektu szkolnego przebiegał etapami: w roku szkolnym 1950/51 zakończono remont parteru, gdzie naukę rozpoczęły trzy odziały, w następnym roku oddano do użytku sale lekcyjne na pierwszym piętrze, a w 1953 r. salę gimnastyczną. W 1957 r. padła decyzja o poprawie bazy dydaktycznej szkoły przez nadbudowę II piętra, gdyż brakowało miejsc na naukę. Powołany został Społeczny Komitet Rozbudowy Szkoły i Komitet Techniczny. Całość prac koordynował mgr Stanisław Gaciarz, dyrektor Liceum powołany 1 IX 1956 r. Nadbudowa została ukończona w roku szkolnym 1958/59.</p>
+                            <div class="card-action right" id="czd">
+                                <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+
+                            </div>
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <figure style="margin: 0;">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="logo.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div id="test5">
+                    <div class="row">
+                        <div class="col l7 m12 s12" style="margin-bottom: 40px;">
+                            <p>Liceum Ogólnokształcące im. Tadeusza Kościuszki w Lubaczowie powstało w 1913 roku. Aktualnie do naszej szkoły uczęszcza 499 uczniów: 177 w klasach pierwszych (7 oddziałów), 152 w klasach drugich (7 oddziałów) oraz 178 w klasach trzecich (7 oddziałów). Uczniowie naszej szkoły pochodzą z Lubaczowa i z okolicznych miejscowości. Ponadto od roku szkolnego 2014/2015 kształcimy polską młodzież pochodzącą z Ukrainy.</p>
+                            <p> Stosunki między nauczycielami, uczniami i rodzicami są niepowtarzalne, bo łączy ich wspólny cel. Rodzice uczniów mają wpływ na to, co się dzieje w szkole. Reprezentowani są w Radzie Rodziców współpracującej z dyrektorem, Radą Pedagogiczną i Samorządem Uczniowskim. Uczestniczą również w finansowaniu szkoły, dobrowolnie wpłacając środki na fundusz Rady Rodziców. Pieniądze wpłacane na rzecz szkoły pozwalają na lepsze wyposażenie jej w pomoce naukowe.</p>
+                            <p>Uczniowie uczęszczający do naszego liceum tworzą społeczność pełną energii i pozytywnie nastawioną do życia. Ich zainteresowania znajdują spełnienie w wielu projektach, realizowanych w szkole. Młodzi sportowcy rozwijają swoje pasje sportowe na pozalekcyjnych treningach.</p>
+                            <p>Już od wielu lat absolwenci naszej szkoły dostają się do renomowanych uczelni na terenie całej Polski, wśród nich są stypendyści, którzy otrzymują szansę studiów zagranicznych. Liceum jest mile wspominane przez abiturientów, którzy chętnie powracają w mury szkoły jako praktykanci lub w ramach spotkań z nauczycielami podczas zjazdów jubileuszowych i spotkań indywidualnych.</p>
+                            <div class="card-action right" id="czd">
+                                <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+
+                            </div>
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <figure style="margin: 0;">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="budynek.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div id="test6">
+                    <div class="row">
+                        <div class="col l7 m12 s12" style="margin-bottom: 40px;">
+                            <p>Tadeusz Kościuszko patron naszej szkoły urodził się w 1746 r. na Mereczowszczyźnie w Księstwie Litewskim.Brał udział w stopniu generała w wojnie o niepodległość Stanów Zjednoczonych (1775-83); kierował tam pracami fortyfikacyjnymi (m.in. w West Point); przyczynił się do zwycięstwa pod Saratogą. W okresie Sejmu Czteroletniego był generałem wojsk koronnych. Podczas wojny z Rosją w 1792 r. otrzymał medal Virtuti Militari z rąk Stanisława Augusta Poniatowskiego. W 1794 r. ogłosił uroczyście na rynku w Krakowie "Akt Powstania" i został jego naczelnikiem.</p>
+                            <p>Odniósł zwycięstwo pod Racławicami. Doceniając konieczność pozyskania chłopów ogłosił Uniwersał Połaniecki, zorganizował obronę Warszawy i nie dopuścił do zajęcia stolicy przez wojska rosyjskie i pruskie.Przez dwa lata więziony był w Petersburgu. Zwolniony został dopiero po śmierci Katarzyny II przez cara Pawła I. Współdziałał przy tworzeniu Legionów Polskich we Włoszech. Kościuszko już za życia stał się symbolem walki o niepodległość.</p>
+                            <p>Był jednym z najbardziej znanych Polaków na świecie, ma pomniki w Stanach Zjednoczonych i w wielu krajach europejskich, a w Krakowie usypano na jego cześć kopiec. Zmarł 15 października 1817 r. w Solurze w Szwajcarii. Zwłoki T. Kościuszki pochowano w Grobach Królewskich na Wawelu (1819 r.). Serce Naczelnika przewieziono do Polski w 1927 r. Obecnie znajduje się na Zamku Królewskim w Warszawie</p>
+                            <div class="card-action right" id="czd">
+                                <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
+
+                            </div>
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <figure style="margin: 0;">
+                                <img class="about-img responsive-img materialboxed z-depth-4"  src="tadek.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- KARUZELA -->
+    <div class="carousel" style="background-color: #f5f5f5; padding:40px;">
+        <a class="carousel-item z-depth-4" href="#one!"><img src="slajdy/slajd1.png"></a>
+        <a class="carousel-item z-depth-4" href="#two!"><img src="slajdy/slajd2.png"></a>
+        <a class="carousel-item z-depth-4" href="#three!"><img src="slajdy/slajd3.png"></a>
+        <a class="carousel-item z-depth-4" href="#four!"><img src="slajdy/slajd4.png"></a>
+        <a class="carousel-item z-depth-4" href="#five!"><img src="slajdy/slajd5.png"></a>
+    </div>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
+                <div class="col l6 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
+                    <p>ul.Kościuszki 26</p>
+                    <p>37-600 Lubaczów</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
+                    <div class="kontakt-footer">
+                        <p>Alicja Marciniszyn</p>
+                        <p>mgr Beata Strojna-Rozwód</p>
+                        <p>16 632 11 53</p>
+                        <p>sekretariat@lo-lubaczow.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright webdeveloperzy L.O Lubaczów
+            </div>
+        </div>
+    </footer>
+    <!-- SKRYPTY -->
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize.min.js"></script>
+    <script>
+    var width = screen.width;
+    $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+    var showNav = function() {
+        $('.button-collapse').sideNav('show');
+    }
+
+    if (width > 992) {
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    } else {
+        $('.dropdown-button').dropdown({
+            hover: false, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    }
+
+    var openFixedButton = function(){
+        $('.tap-target').tapTarget('open');
+    }
+    </script>
+    <script type="text/javascript">
+        $('.carousel').carousel();
+
+    };
+    </script>
+</body>
+
+</html>
