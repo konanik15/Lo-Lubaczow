@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
@@ -20,9 +21,11 @@
 <body>
     <nav class="sticky">
         <div class="nav-wrapper z-depth-5">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
+                <li class="action-btn" style="color: #f39c12">Zwolnione numerki:<a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
+        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a></li>
                 <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
                         <li><a href="#!">O szkole</a></li>
@@ -62,6 +65,7 @@
                 <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Zwolnione numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
                 <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
                     <ul id='dropdown-1' class='dropdown-content z-depth-4'>
                         <li><a href="#!">O szkole</a></li>
@@ -110,15 +114,10 @@
             <h4>Aktualności</h4>
         </div>
     </div>
-    <div class="fixed-action-btn">
-        <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
-        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a>
-    </div>
-    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important">
+    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important; height: 40%;">
         <div class="tap-target-content center">
-            <h5>Dzisiejsi szczęściarze mają numery:</h5>
-            <p style=" color: #f39c12; font-size: 24px; margin-bottom: 0px;">5</p>
-            <p style=" color: #f39c12; font-size: 24px; margin-top: 25px;">25</p>
+            <h5>5</h5>
+            <h5>15</h5>
         </div>
     </div>
     <div class="row" style="margin-bottom: 50px;">
@@ -358,6 +357,7 @@
     }
     </script>
     <script type="text/javascript">
+    {
         $('.carousel').carousel();
 
     };

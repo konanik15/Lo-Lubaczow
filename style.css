@@ -34,9 +34,23 @@ nav .brand-logo {
     margin-left: 50px;
     color: #f39c12;
 }
-.fixed-action-btn
+.num-mobile
+{
+    color: #f39c12;
+    font-size: 18px;
+    padding-top: 5px;
+    background-color: #f5f5f5;
+    border-bottom: 2px #e0e0e0 inset; 
+}
+.action-btn
 {
     margin-bottom: 0 !important;
+    z-index: 1001 !important;
+}
+.action-btn i
+{
+    line-height: 1.75 !important;
+    height: 40px !important;
 }
 #dropdown1 {
     min-width: 160px;
@@ -210,9 +224,10 @@ nav .brand-logo {
     background-color: #34363d !important;
     text-align: center;
 }
-
 .tap-target h5{
+    font-family: 'Frijole', cursive;
     color: #f39c12 !important;
+    font-size: 30px !important;
 }
 #fixed-button-menu {
     color: #f39c12;
@@ -226,13 +241,27 @@ nav .brand-logo {
 {
     background-color: #f39c12 !important;
 }
+/* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
+.input-field
+{
+    width: 30% !important;
+    margin: 0 !important;
+}
+/* media queries */
 @media(max-width: 992px) {
     nav .brand-logo {
         margin-left: 0px;
     }
+
     .responsive.img img{
     height: 120px !important;
     width: 100px !important;
+    }
+}
+@media(max-width: 1070px)
+{
+    .sticky #logo{
+        display: none;
     }
 }
 @media(max-width: 1024px){
@@ -249,5 +278,11 @@ nav .brand-logo {
     .carousel a
     {
         width: 220px !important;
+    }
+}
+@media(max-width: 1600px)
+{
+    .tap-target{
+        width: 60% !important;
     }
 }
