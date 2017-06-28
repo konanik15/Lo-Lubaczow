@@ -242,10 +242,23 @@ nav .brand-logo {
     background-color: #f39c12 !important;
 }
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
-.input-field
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly])
 {
-    width: 30% !important;
-    margin: 0 !important;
+    border-bottom: 1px solid #f39c12 !important;
+    box-shadow: 0 1px 0 0 #f39c12 !important;
+}
+.input-field .prefix.active
+{
+    color: #f39c12 !important;
+}
+.input-field label
+{
+    text-align: center !important;
+}
+.input-field label.active
+{
+    color: #f39c12 !important;
 }
 /* media queries */
 @media(max-width: 992px) {
