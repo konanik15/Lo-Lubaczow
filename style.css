@@ -37,6 +37,10 @@ nav .brand-logo {
 .fixed-action-btn
 {
     margin-bottom: 0 !important;
+    position: fixed !important;
+    left: 30%;
+    top: 0%;
+    z-index: 1001 !important;
 }
 #dropdown1 {
     min-width: 160px;
@@ -230,6 +234,7 @@ nav .brand-logo {
     nav .brand-logo {
         margin-left: 0px;
     }
+    
     .responsive.img img{
     height: 120px !important;
     width: 100px !important;
@@ -249,5 +254,26 @@ nav .brand-logo {
     .carousel a
     {
         width: 220px !important;
+    }
+    .fixed-action-btn
+    {
+        top: -1%;
+    }
+}
+@media(max-width: 1500px){
+    .fixed-action-btn
+    {
+        right: 25%;
+    }
+}
+@media(max-width: 1100px){
+    .fixed-action-btn
+    {
+        left: 20%;
+    }
+}
+@media(max-width: 992px){
+        .fixed-action-btn{
+        left: 90%;
     }
 }
