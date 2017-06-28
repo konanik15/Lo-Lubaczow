@@ -241,6 +241,13 @@ nav .brand-logo {
 {
     background-color: #f39c12 !important;
 }
+/* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
+.input-field
+{
+    width: 30% !important;
+    margin: 0 !important;
+}
+/* media queries */
 @media(max-width: 992px) {
     nav .brand-logo {
         margin-left: 0px;
@@ -253,7 +260,7 @@ nav .brand-logo {
 }
 @media(max-width: 1070px)
 {
-    .sticky .brand-logo{
+    .sticky #logo{
         display: none;
     }
 }
