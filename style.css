@@ -34,13 +34,23 @@ nav .brand-logo {
     margin-left: 50px;
     color: #f39c12;
 }
-.fixed-action-btn
+.num-mobile
+{
+    color: #f39c12;
+    font-size: 18px;
+    padding-top: 5px;
+    background-color: #f5f5f5;
+    border-bottom: 2px #e0e0e0 inset; 
+}
+.action-btn
 {
     margin-bottom: 0 !important;
-    position: fixed !important;
-    left: 30%;
-    top: 0%;
     z-index: 1001 !important;
+}
+.action-btn i
+{
+    line-height: 1.75 !important;
+    height: 40px !important;
 }
 #dropdown1 {
     min-width: 160px;
@@ -214,9 +224,10 @@ nav .brand-logo {
     background-color: #34363d !important;
     text-align: center;
 }
-
 .tap-target h5{
+    font-family: 'Frijole', cursive;
     color: #f39c12 !important;
+    font-size: 30px !important;
 }
 #fixed-button-menu {
     color: #f39c12;
@@ -234,10 +245,16 @@ nav .brand-logo {
     nav .brand-logo {
         margin-left: 0px;
     }
-    
+
     .responsive.img img{
     height: 120px !important;
     width: 100px !important;
+    }
+}
+@media(max-width: 1070px)
+{
+    .sticky .brand-logo{
+        display: none;
     }
 }
 @media(max-width: 1024px){
@@ -255,25 +272,10 @@ nav .brand-logo {
     {
         width: 220px !important;
     }
-    .fixed-action-btn
-    {
-        top: -1%;
-    }
 }
-@media(max-width: 1500px){
-    .fixed-action-btn
-    {
-        right: 25%;
-    }
-}
-@media(max-width: 1100px){
-    .fixed-action-btn
-    {
-        left: 20%;
-    }
-}
-@media(max-width: 992px){
-        .fixed-action-btn{
-        left: 90%;
+@media(max-width: 1600px)
+{
+    .tap-target{
+        width: 60% !important;
     }
 }
