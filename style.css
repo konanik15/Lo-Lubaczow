@@ -32,7 +32,7 @@ nav ul a:hover {
 
 nav .brand-logo {
     margin-left: 50px;
-    color: #f39c12;
+    color: #f39c12 !important;
 }
 .fixed-action-btn
 {
