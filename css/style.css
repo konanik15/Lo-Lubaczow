@@ -125,21 +125,20 @@ nav .brand-logo {
 .card.small .card-image + .card-content {
     max-height: 100% !important;
 }
-.button-more
+.btn
 {
     background: transparent !important;
-    color: #686868 !important;
-    border-radius: 3px;
-    text-transform: uppercase;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
+    color: #f39c12  !important;
+    text-transform: uppercase !important;
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    -o-transition: all 1s !important;
     transition: all 1s !important;
-    z-index: 2000;
 }
-.button-more:hover
+.btn:hover
 {
     background-color: #f39c12 !important;
+    color: #FFFFFF !important;
 }
 /* STYLE O NAS */
 
@@ -260,6 +259,26 @@ input[type=password]:focus:not([readonly])
 {
     color: #f39c12 !important;
 }
+/* GALERIA STYLE */
+.lista-uczniow
+{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lista-uczniow p{
+    font-weight: bold;
+}
+.galeryjne
+{
+    width: 1000px !important;
+    height: 830px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.parallax{
+    transform: none !important;
+}
 /* media queries */
 @media(max-width: 992px) {
     nav .brand-logo {
@@ -276,13 +295,17 @@ input[type=password]:focus:not([readonly])
     .sticky #logo{
         display: none;
     }
+    .galeryjne{
+       transform: scaleX(0.7) !important;
+       transform: scaleY(0.85) !important;
+    }
 }
 @media(max-width: 1024px){
     .onas #onascard{
         width: 100% !important;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 515px){
     .responsive.img img{
     height: 150px;
     }
@@ -290,12 +313,36 @@ input[type=password]:focus:not([readonly])
 @media(max-width: 601px){
     .carousel a
     {
-        width: 220px !important;
+        width: 200px !important;
     }
 }
 @media(max-width: 1600px)
 {
     .tap-target{
         width: 60% !important;
+    }
+}
+@media(max-width: 875px){
+    .galeryjne{
+       transform: scaleX(0.6) !important;
+       transform: scaleY(0.65) !important;
+    }
+}
+@media(max-width: 750px){
+    .galeryjne{
+        width: 600px !important;
+        height: 480px !important;
+    }
+}@media(max-width: 627px){
+    .galeryjne{
+        width: 500px !important;
+        height: 380px !important;
+    }
+}
+@media(max-width: 515px){
+        .galeryjne
+    {
+        width: 400px !important;
+        height: 280px !important;
     }
 }
