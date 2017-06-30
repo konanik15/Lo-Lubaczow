@@ -63,7 +63,10 @@ nav .brand-logo {
 #dropdown4 {
     min-width: 200px;
 }
-
+#dropdown5{
+    min-width: 150px;
+    margin-left: none;
+}
 .dropdown-content li a:hover {
     background-color: #f5f5f5 !important;
 }
@@ -74,7 +77,26 @@ nav .brand-logo {
     top: 0;
     z-index: 1000;
 }
-
+input[type=text]
+{
+    /*background-color: red !important;*/
+    text-align: center;
+    width: 200px !important;
+    position: fixed;
+    top: 60px;
+    right: 5px;
+    display: block;
+}
+#dropdown5 .dropdown-content .active
+{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.Szukaj{
+    display: block !important;
+}
+/* <input id="szukaj" type="text" placeholder="Szukaj" style="display: none;">*/
+/* KONIEC NAVA */
 .parallax-container {
     height: 700px !important;
 }

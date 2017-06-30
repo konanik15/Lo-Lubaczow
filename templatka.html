@@ -24,8 +24,8 @@
             <a href="#!" class="brand-logo" id="logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li class="action-btn" style="color: #f39c12">Zwolnione numerki:<a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
-            <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px;" ></i></a></li>
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:<a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
+            <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75;" ></i></a></li>
                 <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
                         <li><a href="#!">O szkole</a></li>
@@ -56,14 +56,18 @@
                 <li><a class="dropdown-button" data-activates='dropdown4' href="#">Dla rodzica</a>
                     <ul id='dropdown4' class='dropdown-content z-depth-5'>
                         <li><a href="#!">Współpraca z rodzicami</a></li>
-                        <li><a href="#!">Konsultacje</a></li>
                         <li><a href="#!">Rada Rodziców</a></li>
                         <li><a href="#!">Regulamin</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="Szukaj()"><i class="material-icons left">search</i></a></li>
+                 </li>
             </ul>
+            <input id="szukaj" type="text" placeholder="Szukaj" style="position: fixed; top: 70px; right: 0px; display: none;">
+
+
+            <!-- MOBILNE -->
             <ul class="side-nav" id="mobile-demo">
                 <li class="num-mobile center">Zwolnione numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
                 <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
@@ -96,7 +100,6 @@
                 <li><a class="dropdown-button" data-activates='dropdown-4' href="#">Dla rodzica</a>
                     <ul id='dropdown-4' class='dropdown-content z-depth-4'>
                         <li id="to"><a href="#!">Współpraca z rodzicami</a></li>
-                        <li><a href="#!">Konsultacje</a></li>
                         <li><a href="#!">Rada Rodziców</a></li>
                         <li><a href="#!">Regulamin</a></li>
                     </ul>
@@ -126,7 +129,7 @@
 
 
                 <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer" style="position: fixed; bottom: 0;">
     <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
         <div class="container">
             <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
@@ -165,7 +168,7 @@
     var showNav = function() {
         $('.button-collapse').sideNav('show');
     }
-
+    $('#szukaj').addClass('Szukaj');
     if (width > 992) {
         $('.dropdown-button').dropdown({
             hover: true, // Activate on hover
@@ -181,7 +184,6 @@
 
         });
     }
-
     var openFixedButton = function(){
         $('.tap-target').tapTarget('open');
     }
@@ -191,5 +193,6 @@
         $('.carousel').carousel();
 
     };
-    </script>
+    </script>   
+
 </html>
