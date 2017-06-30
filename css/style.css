@@ -110,13 +110,7 @@ input[type=text] {
     font-size: 20px !important;
     color: #f39c12;
 }
-.szukaj-mobile
-{
-    position: initial !important;
-    margin: auto !important;
-    color: #f39c12;
-    font-size: 20px !important;
-}
+
 /* KONIEC NAVA */
 
 .parallax-container {
@@ -254,19 +248,6 @@ input[type=text] {
 .wrapper a i{
     margin: 10px !important;
 }
-#facebook
-{
-    color: #3b5998;
-}
-#facebook:hover{
-    color: #4e69a2;
-}
-#stara-strona{
-    color: #f39c12 !important;
-}
-#stara-strona:hover{
-    color: #f9b13e !important; 
-}
 .white-text {
     margin-top: 0px;
 }
@@ -306,7 +287,28 @@ input[type=text] {
 .btn-floating {
     background-color: #f39c12 !important;
 }
-
+/* =====SOCIALS===== */
+.social_icons ul li{
+    line-height: 1.5;
+}
+.social_icons ul li a {
+    text-decoration: none;
+    display: inline-block !important;
+    text-align: center;
+    border: 1px solid #9d9d9d;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    line-height: 49px;
+    color: #9d9d9d;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;}
+.tooltipped:hover{
+    color: #FFFFFF;
+    background-color: #f39c12;
+}
 
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 

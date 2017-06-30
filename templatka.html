@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 
@@ -63,7 +64,7 @@
                     </ul>
                 </li>
                 <li><a href="# ">Kontakt</a></li>
-                <li><a href="# " style="color: #fff !important; " onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
                  </li>
             </ul>
             <div id="szukaj" class="szukaj z-depth-4">
@@ -111,9 +112,13 @@
                     </ul>
                 </li>
                 <li><a href="#">Kontakt</a></li>
-                <li><input type="text" class="szukaj-mobile" placeholder="Szukaj"></li>
+                <li><a href="#!" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
             </ul>
-        
+            
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" placeholder="Szukaj">
+            </div>
+
             <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
                 <div class="tap-target-content center ">
                     <h5>5</h5>
@@ -131,7 +136,14 @@
 
 
 
-
+        <!-- SOCIALS -->
+    <div class="social_icons center-align" style="width: 100%; position: fixed; bottom: 240px;">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
 
 
                 <!-- FOOTER -->
@@ -161,12 +173,6 @@
         </div>
     <div class="col s0 m2 l2">
     </div>
-    </div>
-    <div class="row" style="margin: 0 !important; padding-top: 0 ">
-        <div class="wrapper">
-        <a href="#!" title="Nasz stara strona"><i class="fa fa-hourglass-half fa-3x left" id="stara-strona" aria-hidden="true"></i></a>
-        <a href="#!" title="Liceum na facebooku"><i class="fa fa-facebook-official fa-3x right" id="facebook" aria-hidden="true"></i></a>
-        </div>
     </div>
         <div class="footer-copyright">
             <div class="container">
@@ -218,6 +224,7 @@
     }
     }
     </script>
+    
 
     <script type="text/javascript ">
     {
