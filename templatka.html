@@ -63,11 +63,11 @@
                     </ul>
                 </li>
                 <li><a href="# ">Kontakt</a></li>
-                <li><a href="# " style="color: #fff !important; " onclick="show()"><i class="material-icons left ">search</i></a></li>
+                <li><a href="# " style="color: #fff !important; " onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
                  </li>
             </ul>
             <div id="szukaj" class="szukaj z-depth-4">
-                     <input type="text" placeholder="Szukaj">
+                     <input type="text" class="szukaj-desktop" placeholder="Szukaj">
             </div>
       
 
@@ -111,7 +111,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><input type="text" class="szukaj-mobile" placeholder="Szukaj"></li>
             </ul>
         
             <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
@@ -206,11 +206,19 @@
         $('.tap-target').tapTarget('open');
     }
      
-    var show = function(){
-          $('#szukaj').addClass('search');
 
+    </script>
+    <script type="text/javascript">
+    function szukajka() {
+    var x = document.getElementById('szukaj');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
     }
     </script>
+
     <script type="text/javascript ">
     {
         $('.carousel').carousel();
