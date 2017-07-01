@@ -94,6 +94,11 @@ input[type=text] {
     right: 0px;
     display: none;
 }
+.szukaj2{
+    position: absolute !important;
+    bottom: 40% !important;
+   /* display: none;*/
+}
 .szukaj-desktop{
     background-color: #34363d !important;
     opacity: 0.7 !important;
@@ -106,9 +111,25 @@ input[type=text] {
 }
 .szukaj-mobile
 {
-    position: fixed !important;
-    top: 57% !important;
+    background-color: #34363d !important;
+    opacity: 0.7 !important;
+    position: absolute !important;
+    top: 50% !important;
     right: 15% !important;
+    z-index: 2000;
+}
+#szukaj2{
+    position: fixed;
+    top: 50%;
+    right: 15%; 
+}
+#submit{
+    position: fixed;
+    bottom: 40%;
+    left: 25%;
+}
+#submit i{
+    line-height: 2;
 }
 /* KONIEC NAVA */
 
@@ -425,5 +446,48 @@ input[type=password]:focus:not([readonly]) {
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
+    }
+}
+@media(max-height: 820px){
+    #szukaj2, .szukaj-mobile{
+        top: 55%;
+    }
+    #submit{
+        bottom: 35%;
+    }
+}@media(max-height: 760px){
+    #szukaj2, .szukaj-mobile{
+        top: 56%;
+    }
+    #submit{
+        bottom: 33%;
+    }
+}@media(max-height: 727px){
+    #szukaj2, .szukaj-mobile{
+        top: 60%;
+    }
+    #submit{
+        bottom: 28%;
+    }
+}@media(max-height: 675px){
+    #szukaj2, .szukaj-mobile{
+        top: 64%;
+    }
+    #submit{
+        bottom: 24%;
+    }
+}@media(max-height: 628px){
+    #szukaj2, .szukaj-mobile{
+        top: 68%;
+    }
+    #submit{
+        bottom: 20%;
+    }
+}@media(max-height: 587px){
+    #szukaj2, .szukaj-mobile{
+        top: 71%;
+    }
+    #submit{
+        bottom: 16%;
     }
 }
