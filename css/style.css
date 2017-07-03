@@ -103,33 +103,27 @@ nav .brand-logo {
     background-color: #34363d !important;
     opacity: 0.7 !important;
     width: 100%;
-    position: fixed;
-    top: 63px;
-    right: 0px !important;
     font-size: 20px !important;
     color: #f39c12;
 }
 .szukaj-mobile
 {
     color: #000000;
-    position: absolute !important;
-    top: 50% !important;
-    right: 25% !important;
     z-index: 2000;
+    display: inline !important;
 }
 #szukaj2{
-    position: fixed;
-    top: 50%;
-    right: 25%; 
+  
 }
 #submit{
     padding: 0;
     width: 60px;
-    height: 35px;
+    height: 37px;
     position: fixed;
     top: 51%;
     
 }
+
 #submit i{
     line-height: 2;
     padding-left: 0 !important;
@@ -340,7 +334,6 @@ input[type=password]:focus:not([readonly]) {
     border-bottom: 1px solid #f39c12 !important;
     box-shadow: 0 1px 0 0 #f39c12 !important;
 }
-
 .input-field .prefix.active {
     color: #f39c12 !important;
 }
@@ -449,48 +442,5 @@ input[type=password]:focus:not([readonly]) {
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
-    }
-}
-@media(max-height: 820px){
-    #szukaj2, .szukaj-mobile{
-        top: 55%;
-    }
-    #submit{
-        top: 56%;   
-    }
-}@media(max-height: 760px){
-    #szukaj2, .szukaj-mobile{
-        top: 56%;
-    }
-    #submit{
-        top: 57%;
-    }
-}@media(max-height: 727px){
-    #szukaj2, .szukaj-mobile{
-        top: 60%;
-    }
-    #submit{
-        top: 61%;
-    }
-}@media(max-height: 675px){
-    #szukaj2, .szukaj-mobile{
-        top: 64%;
-    }
-    #submit{
-        top: 65%
-    }
-}@media(max-height: 628px){
-    #szukaj2, .szukaj-mobile{
-        top: 68%;
-    }
-    #submit{
-        top: 69%
-    }
-}@media(max-height: 587px){
-    #szukaj2, .szukaj-mobile{
-        top: 71%;
-    }
-    #submit{
-       top: 72%;
     }
 }
