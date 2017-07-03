@@ -74,8 +74,8 @@ nav .brand-logo {
     top: 0;
     z-index: 1000;
 }
-
-input[type=text] {
+.szukaj-desktop, 
+.szukaj-mobile {
     text-align: center;
     width: 200px !important;
     position: fixed;
