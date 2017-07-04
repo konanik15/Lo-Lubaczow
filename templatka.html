@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>LO Lubaczów </title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBARY -->
+    <nav class="sticky">
+        <div class="nav-wrapper z-depth-5">
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
+             <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
+                <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
+                    <ul id='dropdown1' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">O szkole</a></li>
+                        <li><a href="#! ">Kadra/pracownicy</a></li>
+                        <li><a href="#! ">Klasy/profile</a></li>
+                        <li><a href="#! ">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Plan lekcji</a></li>
+                <li><a href="# ">Dziennik</a></li>
+                <li><a class="dropdown-button " data-activates='dropdown2' href="# ">Dla gimnazjalisty</a>
+                    <ul id='dropdown2' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Dlaczego my ?</a></li>
+                        <li><a href="#! ">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown3' href="# ">Dla ucznia</a>
+                    <ul id='dropdown3' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Samorząd uczniowski</a></li>
+                        <li><a href="#! ">Podręczniki</a></li>
+                        <li><a href="#! ">Matura</a></li>
+                        <li><a href="#! ">Stypendia</a></li>
+                        <li><a href="#! ">Galerie</a></li>
+                        <li><a href="#! ">//cos tam po rusku</a></li>
+                        <li><a href="#! ">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown4' href="# ">Dla rodzica</a>
+                    <ul id='dropdown4' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Współpraca z rodzicami</a></li>
+                        <li><a href="#! ">Rada Rodziców</a></li>
+                        <li><a href="#! ">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Kontakt</a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                 </li>
+            </ul>
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
+            </div>
+      
+
+
+            <!-- MOBILNE -->
+            <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
+                <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
+                    <ul id='dropdown-1' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">O szkole</a></li>
+                        <li><a href="#!">Kadra/pracownicy</a></li>
+                        <li><a href="#!">Klasy/profile</a></li>
+                        <li><a href="#!">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Plan lekcji</a></li>
+                <li><a href="#">Dziennik</a></li>
+                <li><a class="dropdown-button" data-activates='dropdown-2' href="#">Dla gimnazjalisty</a>
+                    <ul id='dropdown-2' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Dlaczego my ?</a></li>
+                        <li><a href="#!">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-3' href="#">Dla ucznia</a>
+                    <ul id='dropdown-3' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Samorząd uczniowski</a></li>
+                        <li><a href="#!">Podręczniki</a></li>
+                        <li><a href="#!">Matura</a></li>
+                        <li><a href="#!">Stypendia</a></li>
+                        <li><a href="#!">Galerie</a></li>
+                        <li><a href="#!">//cos tam po rusku</a></li>
+                        <li><a href="#!">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-4' href="#">Dla rodzica</a>
+                    <ul id='dropdown-4' class='dropdown-content z-depth-4'>
+                        <li id="to"><a href="#!">Współpraca z rodzicami</a></li>
+                        <li><a href="#!">Konsultacje</a></li>
+                        <li><a href="#!">Rada Rodziców</a></li>
+                        <li><a href="#!">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="szukajka2()"><i class="material-icons left">search</i></a></li>
+                <li style="position: static;">
+                    <div id="szukaj2" class="szukaj center" style="position: inherit; margin-top: 10px;">
+                        <input type="text" class="szukaj-mobile" placeholder="Szukaj" style="position: inherit;">
+                        <button class="btn waves-effect waves-light center" id="submit" type="button" style="background-color: #f39c12; position: inherit;" ><i class="fa fa-paper-plane"></i>
+                </button>
+                    </div>
+                </li>
+            </ul>
+            
+
+
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
+                </div>
+            </div>
+        </nav>
+    <!-- KLASY/PROFILE -->
+    <div class="profile">
+        <div class="row center" style="padding-top: 25px;">
+            <div class="section-title">
+                <h4>Profile klas na rok szkolny 2017/2018</h4>
+            </div>
+        </div>
+
+                    <center><img class="materialboxed" src="img/ofertaedukacyjna.jpg" width="68%"></center>
+        </div>
+    </div>
+        <!-- SOCIALS -->
+    <div class="social_icons center-align">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
+
+
+                <!-- FOOTER -->
+    <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
+    <footer class="page-footer" style="position: absolute; bottom: 0;">
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
+            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
+                <div class="col l6 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
+                    <p>ul.Kościuszki 26</p>
+                    <p>37-600 Lubaczów</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
+                    <div class="kontakt-footer">
+                        <p>Alicja Marciniszyn</p>
+                        <p>mgr Beata Strojna-Rozwód</p>
+                        <p>16 632 11 53</p>
+                        <p>sekretariat@lo-lubaczow.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright webdeveloperzy L.O Lubaczów
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- SKRYPTY -->
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script>
+    var width = screen.width;
+    $(".button-collapse ").sideNav();
+    $('.parallax').parallax();
+    var showNav = function() {
+        $('.button-collapse').sideNav('show');
+    }
+   
+    if (width > 992) {
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    } else {
+        $('.dropdown-button').dropdown({
+            hover: false, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    }
+    var openFixedButton = function(){
+        $('.tap-target').tapTarget('open');
+    }
+     
+
+    </script>
+    <script type="text/javascript">
+    function szukajka() {
+    var x = document.getElementById('szukaj');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    }
+    </script>
+    <script type="text/javascript">
+    var x = document.getElementById('szukaj2');
+        function szukajka2(){
+            if(x.style.display === 'none'){
+                x.style.display = 'block';
+            }else{
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script type="text/javascript ">
+    {
+        $('.carousel').carousel();
+
+    };
+    </script>   
+
+</html>
