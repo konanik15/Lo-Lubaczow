@@ -232,20 +232,6 @@ nav .brand-logo {
     margin-bottom: 20px;
 }
 
-/* STYLE KLASY/PROFILE */
-.profile {
-    background-color: #f5f5f5 !important;
-    padding-bottom: 5px;
-}
-
-#profilecard {
-    width: 70% !important;
-    height: 100% !important;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0 !important;
-}
-
 
 /* KARUZELA*/
 
@@ -257,11 +243,71 @@ nav .brand-logo {
     height: 100%;
 }
 
+
+/* FOOTER */
+
+.page-footer {
+    background-color: #34363d !important;
+    width: 100%;
+    padding-top: 0px !important;
+    color: white;
+}
+
+.page-footer .footer-copyright .container {
+    text-align: center;
+}
+
+#footer-prawo {
+    color: #FFFFFF;
+    text-align: center;
+}
+.wrapper a i{
+    margin: 10px !important;
+}
+.white-text {
+    margin-top: 0px;
+}
+#footer-prawo p {
+    margin: 0;
+}
+
+.kontakt-footer {
+    line-height: 25px;
+}
+
+.footer-copyright {
+    background-color: rgba(18, 0, 0, 0.1) !important;
+    border-bottom: 2px solid #f39c12;
+}
+
+.tap-target {
+    background-color: #34363d !important;
+    text-align: center;
+}
+
+.tap-target h5 {
+    font-family: 'Frijole', cursive;
+    color: #f39c12 !important;
+    font-size: 30px !important;
+}
+
+#fixed-button-menu {
+    color: #f39c12;
+    background-color: #34363d;
+}
+
+#fixed-button-menu:hover {
+    background-color: #f1f2f6 !important;
+}
+
+.btn-floating {
+    background-color: #f39c12 !important;
+}
 /* =====SOCIALS===== */
 .social_icons{
     width: 100%;
-    position: fixed;
-    bottom: 225px;
+    position: absolute;
+    bottom:105px;
 }
 .social_icons ul li{
     line-height: 1.5;
