@@ -10,9 +10,10 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
@@ -20,9 +21,11 @@
 <body>
     <nav class="sticky">
         <div class="nav-wrapper z-depth-5">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:<a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
+        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
                 <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
                         <li><a href="#!">O szkole</a></li>
@@ -62,6 +65,7 @@
                 <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Zwolnione numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
                 <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
                     <ul id='dropdown-1' class='dropdown-content z-depth-4'>
                         <li><a href="#!">O szkole</a></li>
@@ -103,31 +107,17 @@
         </div>
     </nav>
     <div class="parallax-container materialboxed">
-        <div class="parallax"><img src="wallapaper.jpg"></div>
+        <div class="parallax"><img src="img/wallapaper.jpg"></div>
     </div>
-    <!-- <div class="section white">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax2.jpg"></div>
-    </div> -->
     <div class="row center">
         <div class="section-title">
             <h4>Aktualności</h4>
         </div>
     </div>
-    <div class="fixed-action-btn">
-        <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()"><!-- <i class="fa fa-question" style="color:#f39c12; background-color: rgba(47, 52, 62, 0.91); " aria-hidden="true"></i> -->
-        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a>
-    </div>
-    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important">
+    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important; height: 40%;">
         <div class="tap-target-content center">
-            <h5>Test</h5>
-            <p style=" color: #f39c12; margin-bottom: 0px;">Test</p>
-           
+            <h5>5</h5>
+            <h5>15</h5>
         </div>
     </div>
     <div class="row" style="margin-bottom: 50px;">
@@ -135,7 +125,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
@@ -150,7 +140,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
@@ -165,7 +155,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
@@ -180,7 +170,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
@@ -195,7 +185,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
@@ -210,7 +200,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
@@ -256,7 +246,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4" src="logo.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="img/logo.jpg">
                             </figure>
                         </div>
                     </div>
@@ -275,7 +265,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4" src="budynek.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="img/budynek.jpg">
                             </figure>
                         </div>
                     </div>
@@ -293,7 +283,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4"  src="tadek.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4"  src="img/tadek.jpg">
                             </figure>
                         </div>
                     </div>
@@ -309,8 +299,17 @@
         <a class="carousel-item z-depth-4" href="#four!"><img src="slajdy/slajd4.png"></a>
         <a class="carousel-item z-depth-4" href="#five!"><img src="slajdy/slajd5.png"></a>
     </div>
+
+            <!-- SOCIALS -->
+    <div class="social_icons center-align" style="width: 100%; position: static; bottom: 240px; background-color: #f5f5f5;">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
     <!-- FOOTER -->
-    <footer class="page-footer">
+     <footer class="page-footer">
         <div class="container">
             <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
                 <div class="col l6 s12" id="footer-prawo">
@@ -336,8 +335,8 @@
         </div>
     </footer>
     <!-- SKRYPTY -->
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
     var width = screen.width;
     $(".button-collapse").sideNav();
@@ -367,10 +366,10 @@
     }
     </script>
     <script type="text/javascript">
-    $(document).ready(function() {
+    {
         $('.carousel').carousel();
 
-    });
+    };
     </script>
 </body>
 
