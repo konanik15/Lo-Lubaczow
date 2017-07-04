@@ -306,8 +306,8 @@ nav .brand-logo {
 /* =====SOCIALS===== */
 .social_icons{
     width: 100%;
-    position: fixed;
-    bottom: 225px;
+    position: absolute;
+    bottom: 10px;
 }
 .social_icons ul li{
     line-height: 1.5;
@@ -428,6 +428,6 @@ input[type=password]:focus:not([readonly]) {
 }
 @media(max-width: 335px){
     .social_icons{
-        bottom: 325px;
+        bottom: 15px;
     }
 }
