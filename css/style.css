@@ -304,11 +304,7 @@ nav .brand-logo {
     background-color: #f39c12 !important;
 }
 /* =====SOCIALS===== */
-.social_icons{
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-}
+
 .social_icons ul li{
     line-height: 1.5;
 }
@@ -424,10 +420,5 @@ input[type=password]:focus:not([readonly]) {
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
-    }
-}
-@media(max-width: 335px){
-    .social_icons{
-        bottom: 15px;
     }
 }
