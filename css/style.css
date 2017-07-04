@@ -97,7 +97,6 @@ nav .brand-logo {
 .szukaj2{
     position: absolute !important;
     bottom: 40% !important;
-   /* display: none;*/
 }
 .szukaj-desktop{
     background-color: #34363d !important;
@@ -305,6 +304,11 @@ nav .brand-logo {
     background-color: #f39c12 !important;
 }
 /* =====SOCIALS===== */
+.social_icons{
+    width: 100%;
+    position: fixed;
+    bottom: 225px;
+}
 .social_icons ul li{
     line-height: 1.5;
 }
@@ -347,30 +351,6 @@ input[type=password]:focus:not([readonly]) {
 }
 
 
-/* GALERIA STYLE */
-
-.lista-uczniow {
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.lista-uczniow p {
-    font-weight: bold;
-}
-
-.galeryjne {
-    width: 1000px !important;
-    height: 830px !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-}
-
-.parallax {
-    transform: none !important;
-}
-
-
 /* media queries */
 
 @media(max-width: 992px) {
@@ -381,8 +361,10 @@ input[type=password]:focus:not([readonly]) {
         height: 120px !important;
         width: 100px !important;
     }
+    .social_icons{
+        bottom: 310px;
+    }
 }
-
 @media(max-width: 1070px) {
     .sticky #logo {
         display: none;
@@ -442,5 +424,10 @@ input[type=password]:focus:not([readonly]) {
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
+    }
+}
+@media(max-width: 335px){
+    .social_icons{
+        bottom: 325px;
     }
 }
