@@ -27,7 +27,7 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
-                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton()">
              <i class="fa fa-heartbeat" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
                 <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
@@ -71,8 +71,6 @@
                      <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
             </div>
       
-
-
             <!-- MOBILNE -->
             <ul class="side-nav" id="mobile-demo">
                 <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
@@ -139,13 +137,11 @@
 
 
 
-
-
         <!-- SOCIALS -->
     <div class="social_icons center-align">
         <ul class="center-align" style="display: inline-flex;">
-            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+             <li><a href="https://www.facebook.com/lolubaczow/" target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="http://lo-lubaczow.pl/"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
             
         </ul>
     </div>
@@ -190,61 +186,6 @@
 <!-- SKRYPTY -->
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
-    <script>
-    var width = screen.width;
-    $(".button-collapse ").sideNav();
-    $('.parallax').parallax();
-    var showNav = function() {
-        $('.button-collapse').sideNav('show');
-    }
-   
-    if (width > 992) {
-        $('.dropdown-button').dropdown({
-            hover: true, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    } else {
-        $('.dropdown-button').dropdown({
-            hover: false, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    }
-    var openFixedButton = function(){
-        $('.tap-target').tapTarget('open');
-    }
-     
-
-    </script>
-    <script type="text/javascript">
-    function szukajka() {
-    var x = document.getElementById('szukaj');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-    }
-    </script>
-    <script type="text/javascript">
-    var x = document.getElementById('szukaj2');
-        function szukajka2(){
-            if(x.style.display === 'none'){
-                x.style.display = 'block';
-            }else{
-                x.style.display = 'none';
-            }
-        }
-    </script>
-
-    <script type="text/javascript ">
-    {
-        $('.carousel').carousel();
-
-    };
-    </script>   
+    <script type="text/javascript" src="js/script.js"></script>   
 
 </html>

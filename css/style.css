@@ -83,7 +83,9 @@ nav .brand-logo {
     right: 5px;
     display: block;
 }
-
+::-webkit-input-placeholder {
+  color: #000000 !important;
+}
 #dropdown5 .dropdown-content .active {
     margin: 0px !important;
     padding: 0px !important;

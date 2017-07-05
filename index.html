@@ -16,6 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <style type="text/css">
+        nav .tap-target-wrapper{
+        display: none;
+        }  
+    </style>
 </head>
 
 <body>
@@ -26,7 +32,9 @@
             <ul class="right hide-on-med-and-down">
                 <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
                     <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
-             <i class="fa fa-heartbeat" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
+                        <i class="fa fa-heartbeat" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i>
+                    </a>
+             </li>
                 <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
                         <li><a href="#! ">O szkole</a></li>
@@ -69,7 +77,12 @@
                      <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
             </div>
       
-
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
+                </div>
+            </div>
 
             <!-- MOBILNE -->
             <ul class="side-nav" id="mobile-demo">
@@ -119,17 +132,9 @@
                     </div>
                 </li>
             </ul>
-            
-
-
-            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
-                <div class="tap-target-content center ">
-                    <h5>5</h5>
-                    <h5>15</h5>
-                </div>
-            </div>
+                      
         </nav>
-    <div class="parallax-container materialboxed">
+    <div class="parallax-container">
         <div class="parallax"><img src="img/wallapaper.jpg"></div>
     </div>
     <div class="row center">
@@ -326,8 +331,8 @@
             <!-- SOCIALS -->
     <div class="social_icons center-align" style="width: 100%; position: static; bottom: 240px; background-color: #f5f5f5;">
         <ul class="center-align" style="display: inline-flex;">
-            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.facebook.com/lolubaczow/" target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="http://lo-lubaczow.pl/"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
             
         </ul>
     </div>
@@ -369,62 +374,7 @@
     <!-- SKRYPTY -->
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
-    <script>
-    var width = screen.width;
-    $(".button-collapse ").sideNav();
-    $('.parallax').parallax();
-    var showNav = function() {
-        $('.button-collapse').sideNav('show');
-    }
-   
-    if (width > 992) {
-        $('.dropdown-button').dropdown({
-            hover: true, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    } else {
-        $('.dropdown-button').dropdown({
-            hover: false, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    }
-    var openFixedButton = function(){
-        $('.tap-target').tapTarget('open');
-    }
-     
-
-    </script>
-    <script type="text/javascript">
-    function szukajka() {
-    var x = document.getElementById('szukaj');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-    }
-    </script>
-    <script type="text/javascript">
-    var x = document.getElementById('szukaj2');
-        function szukajka2(){
-            if(x.style.display === 'none'){
-                x.style.display = 'block';
-            }else{
-                x.style.display = 'none';
-            }
-        }
-    </script>
-
-    <script type="text/javascript ">
-    {
-        $('.carousel').carousel();
-
-    };
-    </script> 
+    <script type="text/javascript" src="js/script.js"></script>   
 </body>
 
 </html>
