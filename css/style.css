@@ -196,8 +196,19 @@ nav .brand-logo {
     background-color: #f39c12 !important;
     color: #FFFFFF !important;
 }
-
-
+.btn-admin{
+    background: transparent !important;
+    color: #f39c12 !important;
+    text-transform: uppercase !important;
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    -o-transition: all 1s !important;
+    transition: all 1s !important;
+}
+.btn-admin:hover {
+    background-color: #f39c12 !important;
+    color: #FFFFFF !important;
+}
 /* STYLE O NAS */
 
 .onas {
@@ -367,7 +378,19 @@ input[type=text].valid{
     margin-right: auto;
     margin-left: auto;
 }
-
+#czekbox {
+    padding: 30px !important;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+input[type=checkbox].filled-in:checked+label:after{
+    background-color: #f39c12 !important;
+    border: 2px #f39c12 solid;
+}
 /* media queries */
 @media(max-width: 992px) {
     nav .brand-logo {

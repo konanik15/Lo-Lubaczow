@@ -89,14 +89,25 @@
                                 </div>
                         </form>
                         </div>
-                        <div class="col l1"></div>
-                        </div><div class="row">
+                        <div class="col l1" style="min-height: 81px;"></div>
+                        </div>
+                        
+                        <!--<button onclick="rozwinInput()"> klik </button> -->
+
+                          <form action="#" id="czekbox">
+                                <p>
+                                  <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" onclick="rozwinInput()" />
+                                  <label for="filled-in-box">Dodaj galerię do artykułu</label>
+                                </p>
+                         </form>
+
+                        <div class="row" id="chowany">
                         <div class="col l1"></div>
                         <div class="col l10">
                           <form action="#">
                                 <div class="file-field input-field">
                                   <div class="btn">
-                                    <span>Dodaj zdjęcie</span>
+                                    <span>Dodaj zdjęcia</span>
                                     <input type="file" multiple>
                                   </div>
                                   <div class="file-path-wrapper">
@@ -170,6 +181,11 @@
 <!-- SKRYPTY -->
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
-    <script type="text/javascript" src="js/script.js"></script>   
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        function rozwinInput(){
+            $('#chowany').toggleClass('hide','show');
+        }
 
+    </script>
 </html>
