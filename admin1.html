@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>LO Lubaczów </title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBARY -->
+    <nav class="sticky">
+        <div class="nav-wrapper z-depth-5">
+            <a href="#!" class="brand-logo" id="logo"><i class="fa fa-cogs" style="color: #f39c12;" aria-hidden="true"></i>Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
+            <ul class="right">
+                
+                <li class="active" ><a href="# ">Newsy</a></li>
+                <li><a href="# ">Galeria</a></li>
+                <li><a href="# ">Samorząd uczniowski</a></li>
+                <li><a href="# ">Rada rodziców</a></li>
+                <li><a href="# ">Przedmioty</a></li>
+                <li><a href="# ">Rekrutacja</a></li>
+                <li><a href="# "><i class="fa fa-sign-out" style="color: white" aria-hidden="true"></i> Wyloguj</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+                <!-- TUTAJ ŁADUJECIE CONTENT STRONY -->
+    <div class="row center" style="padding-top: 75px;">
+            <div class="section-title">
+                <h4>Zarządzaj newsami</h4>
+            </div>
+        </div>
+
+
+    <div class="row">
+        <div class="col l1"></div>
+        <div class="col l10">
+            <div class="news-wrapper">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-pencil" aria-hidden="true"></i>Dodaj news</div>
+                      <div class="collapsible-body center-align">
+                          <div class="row center">
+                            <div class="col l1"></div>
+                                <div class="input-field col l10">
+                                <input id="input_text"  type="text" data-length="68">
+                                <label for="input_text">Tytuł</label>
+                                </div>
+                            <div class="col l1"></div>
+                        </div>
+                        <div class="row dodaj-news">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea" data-length="170"></textarea>
+                                <label for="textarea1">Deskrypcja</label>
+                              </div>
+                        </div>
+                        <div class="row dodaj-news">
+                            <div class="input-field col s12">
+                                <textarea id="textarea2" class="materialize-textarea" ></textarea>
+                                <label for="textarea2">Treść newsa</label>
+                              </div>
+                        </div>
+                        <div class="row">
+                        <div class="col l1"></div>
+                        <div class="col l10">
+                          <form action="#">
+                                <div class="file-field input-field dodaj-img">
+                                  <div class="btn">
+                                    <span>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                        </form>
+                        </div>
+                        <div class="col l1"></div>
+                        </div><div class="row">
+                        <div class="col l1"></div>
+                        <div class="col l10">
+                          <form action="#">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Dodaj zdjęcie</span>
+                                    <input type="file" multiple>
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                        </form>
+                        </div>
+                        <div class="col l1"></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">Second</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">Third</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+        <div class="col l1"></div>
+    </div>
+
+
+
+
+
+
+        <!-- SOCIALS -->
+
+
+                <!-- FOOTER -->
+    <footer class="page-footer" style="position: absolute; bottom: 0; display: none;" >
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
+            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
+                <div class="col l6 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
+                    <p>ul.Kościuszki 26</p>
+                    <p>37-600 Lubaczów</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
+                    <div class="kontakt-footer">
+                        <p>Alicja Marciniszyn</p>
+                        <p>mgr Beata Strojna-Rozwód</p>
+                        <p>16 632 11 53</p>
+                        <p>sekretariat@lo-lubaczow.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright webdeveloperzy L.O Lubaczów
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- SKRYPTY -->
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript" src="js/script.js"></script>   
+
+</html>
