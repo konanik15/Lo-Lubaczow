@@ -17,7 +17,7 @@ h6 {
 /* //// NAVBAR //// */
 
 nav {
-    background-color: rgba(47, 52, 62, 0.91) !important;
+    background-color: #34363d !important;
 }
 
 nav ul a {
@@ -83,7 +83,9 @@ nav .brand-logo {
     right: 5px;
     display: block;
 }
-
+::-webkit-input-placeholder {
+  color: #000000 !important;
+}
 #dropdown5 .dropdown-content .active {
     margin: 0px !important;
     padding: 0px !important;
@@ -330,7 +332,9 @@ nav .brand-logo {
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]) {
+input[type=password]:focus:not([readonly]),
+textarea:focus:not([readonly]),
+input[type=text].valid{
     border-bottom: 1px solid #f39c12 !important;
     box-shadow: 0 1px 0 0 #f39c12 !important;
 }
@@ -340,15 +344,31 @@ input[type=password]:focus:not([readonly]) {
 
 .input-field label {
     text-align: center !important;
+    width: 100%;
 }
 
 .input-field label.active {
     color: #f39c12 !important;
 }
 
+/* /\/\/\/\/\/\/\ ADMIN NEWSY /\/\/\/\/\/\/\ */
+.collapsible-body{
+    padding: 0 !important;
+}
+.materialize-textarea{
+    padding-bottom: 0 !important;
+    line-height: 1.5 !important;
+}
+.dodaj-news{
+    width: 95% !important;
+}
+.dodaj-img{
+    width: 40% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* media queries */
-
 @media(max-width: 992px) {
     nav .brand-logo {
         margin-left: 0px;
