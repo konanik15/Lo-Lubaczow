@@ -399,6 +399,16 @@ nav .brand-logo {
     margin-top:80px;
     margin-bottom:50px;
 }
+/* ==============DLACZEGO - MY ============== */
+.row .btn
+{
+    margin-top: 100px;
+}
+
+
+
+
+
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
