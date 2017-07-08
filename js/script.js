@@ -2,6 +2,7 @@
     var width = screen.width;
     $(".button-collapse ").sideNav();
     $('.parallax').parallax();
+    $('select').material_select();
     var showNav = function() {
         $('.button-collapse').sideNav('show');
     }
