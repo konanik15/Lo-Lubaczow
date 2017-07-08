@@ -403,23 +403,34 @@ nav .brand-logo {
 .transition-list .btn-large
 {
     margin-top: 100px;
+     z-index: 100;
 }
 .transition-list ul li
 {
 opacity: 0;
-margin-top: 20px;
+margin-top: 40px;
 font-size: 19px;
 }
+.transition
 .transition-list ul:first-child li:first-child
 {
     margin-top: 150px;
     font-size: 22px;
-    border-bottom: 1px solid #f39c12;
-    border-top:1px solid #f39c12;;
     padding-bottom: 20px;   
     padding-top: 20px;   
 }
-.transition-lis
+.transition-list ul:first-child li:first-child::after
+{
+   content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #f39c12 !important;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 68px;  
+}
+
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),

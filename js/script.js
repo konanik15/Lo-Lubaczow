@@ -53,3 +53,10 @@
     var elmnt = document.getElementById("mainbutton");    
      elmnt.scrollIntoView(false);
 };
+
+  var options = [
+    {selector: '.second-list', offset: 300, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } }
+  ];
+  Materialize.scrollFire(options);
