@@ -45,3 +45,11 @@
         $('.carousel').carousel();
 
     };
+    //autoscroll na buttona na Dlaczego My?
+    $(document).ready(function () {
+        mainbutton();
+    });
+    function mainbutton() {
+    var elmnt = document.getElementById("mainbutton");    
+     elmnt.scrollIntoView(false);
+};

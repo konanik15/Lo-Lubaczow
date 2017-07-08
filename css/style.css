@@ -400,15 +400,26 @@ nav .brand-logo {
     margin-bottom:50px;
 }
 /* ==============DLACZEGO - MY ============== */
-.row .btn
+.transition-list .btn-large
 {
     margin-top: 100px;
 }
-
-
-
-
-
+.transition-list ul li
+{
+opacity: 0;
+margin-top: 20px;
+font-size: 19px;
+}
+.transition-list ul:first-child li:first-child
+{
+    margin-top: 150px;
+    font-size: 22px;
+    border-bottom: 1px solid #f39c12;
+    border-top:1px solid #f39c12;;
+    padding-bottom: 20px;   
+    padding-top: 20px;   
+}
+.transition-lis
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
