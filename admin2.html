@@ -63,10 +63,15 @@
 
         <div class="row">
             <div class="col l1"></div>
-            <div class="col l10">
+            <div class="col l3">
+                <blockquote>
+                    <p style="font-size: 20px;">Wybierz klasę</p>
+                </blockquote>
+            </div>
+            <div class="col l7">
                 <div class="input-field col s12">
-                    <select>
-                      <option value="" disabled selected>Wybierz klasę</option>
+                    <select id="wybor">
+                      <option value="" disabled selected></option>
                       <option value="1">Klasa 1</option>
                       <option value="2">Klasa 2</option>
                       <option value="3">Klasa 3</option>
@@ -75,16 +80,137 @@
             </div>
             <div class="col l1"></div>
         </div>
-        <div class="row galeria-klasy">
-            <div class="col l1"></div>
-            <div class="col l10">
-                tutaj będą różne klasy sobie hehe
+        <div class="row" id="klasy1" style="display: none;">
+            <div class="col l3"></div>
+            <div class="col l6">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header">A</div>
+                      <div class="collapsible-body">
+                          <form action="#">
+                                <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            <div>
+                      </div>
+                      <div class="right-align" style="padding: 10px;">
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
+                      </div>
+                    </li>
+                    <!-- koniec jednego -->
+                    <li>
+                      <div class="collapsible-header">B</div>
+                      <div class="collapsible-body">
+                          <form action="#">
+                                <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            <div>
+                      </div>
+                      <div class="right-align" style="padding: 10px;">
+                       <a class="waves-effect waves-light btn" href="#modal1"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">C</div>
+                      <div class="collapsible-body">
+                          <form action="#">
+                                <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            <div>
+                      </div>
+                      <div class="right-align" style="padding: 10px;">
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">D</div>
+                      <div class="collapsible-body">
+                          <form action="#">
+                                <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            <div>
+                      </div>
+                      <div class="right-align" style="padding: 10px;">
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">E</div>
+                      <div class="collapsible-body">
+                          <form action="#">
+                                <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            <div>
+                      </div>
+                      <div class="right-align" style="padding: 10px;">
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
+                      </div>
+                    </li>
+                  </ul>
             </div>
-            <div class="col l1"></div>
+            <div class="col l3"></div>
         </div>
 
         <!-- SOCIALS -->
-
+        <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content center section-title">
+      <h4>1A</h4>
+      <div class="lista-uczniow center">
+      <p style="font-size: 20px; font-weight: 700;">Lista uczniów:</p>
+          <ul>
+              <li>Adam Miałczyński</li>
+              <li>Adam Miałczyński</li>
+              <li>Adam Miałczyński</li>
+              <li>Adam Miałczyński</li>
+              <li>Adam Miałczyński</li>
+          </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat btn" style="margin-right: 10px;">Zamknij</a>
+      <a class="waves-effect waves-light btn-flat btn" style="margin-right: 20px;">Edytuj<i class="fa fa-wrench" style="padding-left: 10px;" aria-hidden="true"></i></a>
+    </div>
+  </div>    
+    </div>
 
                 <!-- FOOTER -->
     <footer class="page-footer" style="position: absolute; bottom: 0; display: none;" >
@@ -125,5 +251,22 @@
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
     <script type="text/javascript" src="js/script.js"></script>
-
+    <script type="text/javascript">
+      {$('.modal').modal();
+        };
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $('#wybor').on('change', function() {
+      if ( this.value == '1')
+      {
+        $("#klasy1").show();
+      }
+      else
+      {
+        $("#klasy1").hide();
+      }
+    });
+});
+    </script>
 </html>
