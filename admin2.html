@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.css" />
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <style type="text/css">
         .btn {
@@ -66,7 +67,7 @@
             <div class="col l10">
                   <ul class="collapsible" data-collapsible="accordion">
                     <li>
-                      <div class="collapsible-header"><i class="fa fa-plus" aria-hidden="true"></i>Dodaj galerię klasową<i class="fa fa-chevron-down right" aria-hidden="true"></i></div>
+                      <div class="collapsible-header"><i class="fa fa-plus" aria-hidden="true"></i>Utwórz nową galerię klasową<i class="fa fa-chevron-down right" aria-hidden="true"></i></div>
                       <div class="collapsible-body">
                           <div class="row center" style="padding-top: 15px">
                             <div class="col l7">
@@ -133,7 +134,7 @@
             <div class="col l6">
                 <ul class="collapsible popout" data-collapsible="accordion">
                     <li>
-                      <div class="collapsible-header active"><i class="fa fa-picture-o" aria-hidden="true"></i>A</div>
+                      <div class="collapsible-header"><i class="fa fa-picture-o" aria-hidden="true"></i>A</div>
                       <div class="collapsible-body">
                           <form action="#">
                                 <div class="file-field input-field" style="width: 40%; margin-left: 20px;">
@@ -148,7 +149,8 @@
                             </form>
                             <div>
                       </div>
-                      <div class="right-align" style="padding: 10px;">
+                        <div class="right-align" style="padding: 10px;">
+                        <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>   
@@ -169,7 +171,8 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
-                       <a class="waves-effect waves-light btn" href="#modal1"></a>
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
                     <li>
@@ -189,6 +192,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -209,6 +213,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -229,6 +234,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -258,6 +264,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>   
@@ -278,7 +285,8 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
-                       <a class="waves-effect waves-light btn" href="#modal1"></a>
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
                     <li>
@@ -298,6 +306,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -318,6 +327,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -338,6 +348,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -366,6 +377,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>   
@@ -386,7 +398,8 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
-                       <a class="waves-effect waves-light btn" href="#modal1"></a>
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
+                       <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
                     <li>
@@ -406,6 +419,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -426,6 +440,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -446,6 +461,7 @@
                             <div>
                       </div>
                       <div class="right-align" style="padding: 10px;">
+                      <button class="waves-effect waves-light btn" onclick="Del()">Usuń</button>
                        <a class="waves-effect waves-light btn" href="#modal1">Lista uczniów</a>
                       </div>
                     </li>
@@ -529,6 +545,7 @@
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.js"></script>
     <script type="text/javascript">
         function edycja(){
             $('#1').css('display','none');
@@ -564,4 +581,25 @@
 
 });
     </script>
+<script>
+function Del() {
+        swal({
+      title: 'Czy chcesz usunąć galerię?',
+      text: "Nie będzie możliwości przywrócenia dokonanych zmian!",
+      type: 'question',
+      showCancelButton: true,
+      cancelButtonText: 'Anuluj',
+      cancelButtonClass: 'can',
+      confirmButtonColor: '#f39c12',
+      cancelButtonColor: '#fff',
+      confirmButtonText: 'Tak, usuń!'
+    }).then(function () {
+      swal(
+        'Usunięto!',
+        'Galeria została usunięta',
+        'success'
+  )
+})
+}
+</script>
 </html>

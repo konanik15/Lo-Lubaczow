@@ -374,6 +374,13 @@ input[type=text].valid{
 .show{
     display: block;
 }
+.can{
+    color: black !important;
+    background-color: #f9f9f9 !important;
+}
+.can:hover{
+    background-color: #efefef !important;
+}
 input[type=checkbox].filled-in:checked+label:after{
     background-color: #f39c12 !important;
     border: 2px #f39c12 solid;
