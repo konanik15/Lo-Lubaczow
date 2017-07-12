@@ -10,58 +10,83 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <style type="text/css">
+        nav .tap-target-wrapper{
+        display: none;
+        }  
+    </style>
 </head>
 
 <body>
     <nav class="sticky">
         <div class="nav-wrapper z-depth-5">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
+                        <i class="fa fa-heartbeat" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i>
+                    </a>
+             </li>
+                <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">O szkole</a></li>
-                        <li><a href="#!">Kadra/pracownicy</a></li>
-                        <li><a href="#!">Klasy/profile</a></li>
-                        <li><a href="#!">Dokumenty</a></li>
+                        <li><a href="#! ">O szkole</a></li>
+                        <li><a href="#! ">Kadra/pracownicy</a></li>
+                        <li><a href="#! ">Klasy/profile</a></li>
+                        <li><a href="#! ">Dokumenty</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Plan lekcji</a></li>
-                <li><a href="#">Dziennik</a></li>
-                <li><a class="dropdown-button" data-activates='dropdown2' href="#">Dla gimnazjalisty</a>
+                <li><a href="# ">Plan lekcji</a></li>
+                <li><a href="# ">Dziennik</a></li>
+                <li><a class="dropdown-button " data-activates='dropdown2' href="# ">Dla gimnazjalisty</a>
                     <ul id='dropdown2' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">Dlaczego my ?</a></li>
-                        <li><a href="#!">Rekrutacja</a></li>
+                        <li><a href="#! ">Dlaczego my ?</a></li>
+                        <li><a href="#! ">Rekrutacja</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-button" data-activates='dropdown3' href="#">Dla ucznia</a>
+                <li><a class="dropdown-button " data-activates='dropdown3' href="# ">Dla ucznia</a>
                     <ul id='dropdown3' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">Samorząd uczniowski</a></li>
-                        <li><a href="#!">Podręczniki</a></li>
-                        <li><a href="#!">Matura</a></li>
-                        <li><a href="#!">Stypendia</a></li>
-                        <li><a href="#!">Galerie</a></li>
-                        <li><a href="#!">//cos tam po rusku</a></li>
-                        <li><a href="#!">Biblioteka</a></li>
+                        <li><a href="#! ">Samorząd uczniowski</a></li>
+                        <li><a href="#! ">Podręczniki</a></li>
+                        <li><a href="#! ">Matura</a></li>
+                        <li><a href="#! ">Stypendia</a></li>
+                        <li><a href="#! ">Galerie</a></li>
+                        <li><a href="#! ">//cos tam po rusku</a></li>
+                        <li><a href="#! ">Biblioteka</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-button" data-activates='dropdown4' href="#">Dla rodzica</a>
+                <li><a class="dropdown-button " data-activates='dropdown4' href="# ">Dla rodzica</a>
                     <ul id='dropdown4' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">Współpraca z rodzicami</a></li>
-                        <li><a href="#!">Konsultacje</a></li>
-                        <li><a href="#!">Rada Rodziców</a></li>
-                        <li><a href="#!">Regulamin</a></li>
+                        <li><a href="#! ">Współpraca z rodzicami</a></li>
+                        <li><a href="#! ">Rada Rodziców</a></li>
+                        <li><a href="#! ">Regulamin</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><a href="# ">Kontakt</a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                 </li>
             </ul>
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
+            </div>
+      
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
+                </div>
+            </div>
+
+            <!-- MOBILNE -->
             <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
                 <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
                     <ul id='dropdown-1' class='dropdown-content z-depth-4'>
                         <li><a href="#!">O szkole</a></li>
@@ -98,27 +123,29 @@
                     </ul>
                 </li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="szukajka2()"><i class="material-icons left">search</i></a></li>
+                <li style="position: static;">
+                    <div id="szukaj2" class="szukaj center" style="position: inherit; margin-top: 10px;">
+                        <input type="text" class="szukaj-mobile" placeholder="Szukaj" style="position: inherit;">
+                        <button class="btn waves-effect waves-light center" id="submit" type="button" style="background-color: #f39c12; position: inherit;" ><i class="fa fa-paper-plane"></i>
+                </button>
+                    </div>
+                </li>
             </ul>
-        </div>
-    </nav>
-    <div class="parallax-container materialboxed">
-        <div class="parallax"><img src="wallapaper.jpg"></div>
+                      
+        </nav>
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/wallapaper.jpg"></div>
     </div>
     <div class="row center">
         <div class="section-title">
             <h4>Aktualności</h4>
         </div>
     </div>
-    <div class="fixed-action-btn">
-        <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()">
-        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a>
-    </div>
-    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important">
+    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important; height: 40%;">
         <div class="tap-target-content center">
-            <h5>Dzisiejsi szczęściarze mają numery:</h5>
-            <p style=" color: #f39c12; font-size: 24px; margin-bottom: 0px;">5</p>
-            <p style=" color: #f39c12; font-size: 24px; margin-top: 25px;">25</p>
+            <h5>5</h5>
+            <h5>15</h5>
         </div>
     </div>
     <div class="row" style="margin-bottom: 50px;">
@@ -126,7 +153,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
@@ -141,7 +168,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
@@ -156,7 +183,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
@@ -171,14 +198,14 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
                         <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 maja 2017r.</p>
                         <p>W dniu 23 maja 2017 roku odbył się w naszej szkole Konkurs Ortograficzny z Języka Francuskiego. W konkursie wzięli udział uczniowie.</p>
                     </div>
-                    <<div class="card-action" >
+                    <div class="card-action" >
                         <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
                     </div>
                 </div>
@@ -186,7 +213,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
@@ -201,7 +228,7 @@
             <div class="col l4 m6 s12">
                 <div class="card small z-depth-4">
                     <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
+                        <img class="materialboxed" src="img/wallapaper.jpg">
                     </div>
                     <div class="card-content">
                         <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
@@ -247,7 +274,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4" src="logo.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="img/logo.jpg">
                             </figure>
                         </div>
                     </div>
@@ -266,7 +293,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4" src="budynek.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4" src="img/budynek.jpg">
                             </figure>
                         </div>
                     </div>
@@ -284,7 +311,7 @@
                         </div>
                         <div class="col l5 m12 s12">
                             <figure style="margin: 0;">
-                                <img class="about-img responsive-img materialboxed z-depth-4"  src="tadek.jpg">
+                                <img class="about-img responsive-img materialboxed z-depth-4"  src="img/tadek.jpg">
                             </figure>
                         </div>
                     </div>
@@ -300,9 +327,24 @@
         <a class="carousel-item z-depth-4" href="#four!"><img src="slajdy/slajd4.png"></a>
         <a class="carousel-item z-depth-4" href="#five!"><img src="slajdy/slajd5.png"></a>
     </div>
-    <!-- FOOTER -->
-    <footer class="page-footer">
-        <div class="container">
+
+            <!-- SOCIALS -->
+    <div class="social_icons center-align" style="width: 100%; position: static; bottom: 240px; background-color: #f5f5f5;">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="https://www.facebook.com/lolubaczow/" target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="http://lo-lubaczow.pl/"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
+
+                <!-- FOOTER -->
+    <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
+    <footer class="page-footer" >
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
             <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
                 <div class="col l6 s12" id="footer-prawo">
                     <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
@@ -320,6 +362,9 @@
                 </div>
             </div>
         </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
         <div class="footer-copyright">
             <div class="container">
                 © 2017 Copyright webdeveloperzy L.O Lubaczów
@@ -327,41 +372,9 @@
         </div>
     </footer>
     <!-- SKRYPTY -->
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="materialize.min.js"></script>
-    <script>
-    var width = screen.width;
-    $(".button-collapse").sideNav();
-    $('.parallax').parallax();
-    var showNav = function() {
-        $('.button-collapse').sideNav('show');
-    }
-
-    if (width > 992) {
-        $('.dropdown-button').dropdown({
-            hover: true, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    } else {
-        $('.dropdown-button').dropdown({
-            hover: false, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    }
-
-    var openFixedButton = function(){
-        $('.tap-target').tapTarget('open');
-    }
-    </script>
-    <script type="text/javascript">
-        $('.carousel').carousel();
-
-    };
-    </script>
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript" src="js/script.js"></script>   
 </body>
 
 </html>
