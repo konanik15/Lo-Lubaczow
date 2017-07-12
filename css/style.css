@@ -230,8 +230,12 @@ nav .brand-logo {
     height: 270px;
     margin-bottom: 20px;
 }
-
-
+/* GALERIA >? */
+html, body, .block{
+    height: 100%
+}
+nav ul li a:hover, nav ul li a.active {
+        background-color: rgba(0,0,0,.1);}
 /* KARUZELA*/
 
 .carousel a {
