@@ -385,9 +385,6 @@ input[type=checkbox].filled-in:checked+label:after{
     padding: 10px;
 }
 /* ^^^^^ ADMIN GALERIA^ ^^^^ */
-blockquote{
-    border-left: 5px solid #f39c12 !important;
-}
 input.select-dropdown{
     text-align: center !important;
     font-weight: 700;
@@ -399,6 +396,23 @@ input.select-dropdown{
 .dropdown-content li > span{
     color: #000000 !important;
     font-size: 20px !important;
+}
+.lista-uczniow{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-footer{
+    width: 400px !important;
+}
+.lista-uczniow p{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+#first_name{
+    width: 300px !important;
+    text-align: center;
 }
 /* media queries */
 @media(max-width: 992px) {

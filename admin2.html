@@ -64,6 +64,59 @@
         <div class="row">
             <div class="col l1"></div>
             <div class="col l10">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="fa fa-plus" aria-hidden="true"></i>Dodaj galerię klasową<i class="fa fa-chevron-down right" aria-hidden="true"></i></div>
+                      <div class="collapsible-body">
+                          <div class="row center" style="padding-top: 15px">
+                            <div class="col l7">
+                                <form action="#">
+                                <div class="file-field input-field" style="width: 90%; margin-left: 20px;">
+                                  <div class="btn">
+                                    <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+                            </form>
+                            </div>
+                            <div style="width: 100%;" class="right-align"><a class="waves-effect waves-light btn-flat btn" style="margin-right: 10px;"><i class="fa fa-check-square-o" style="padding-right: 10px;" aria-hidden="true"></i>Utwórz</a></div>
+                            <div class="input-field col l5">
+                              <input id="first_name" type="text" class="validate">
+                              <label for="first_name">Imię i nazwisko wychowawcy</label>
+                            </div>
+                            <div class="new-providers col l12">
+                                <div class="provider-append center-align" id="toggleExtraProvider">
+                                <div class="form-group input-field col l4">
+                                    <input type="text" class="form-control validate" id="practiceProvider"/>
+                                    <label>Imię i nazwisko ucznia</label>
+                                </div>
+                            </div>
+
+                            
+<!--                     <div class="new-providers">
+                        <div class="provider-append" id="toggleExtraProvider">
+                            <div class="form-group input-field col l5">
+                                <input type="text" class="form-control validate" id="practiceProvider"/>
+                                <label>Imię i nazwisko ucznia</label>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>  -->
+
+
+                    </li>
+                    </ul>
+            </div>
+            <div class="col l1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col l1"></div>
+            <div class="col l10">
                 <div class="input-field col s12">
                     <select id="wybor">
                       <option value="" disabled selected>Wybierz klasę</option>
@@ -403,72 +456,73 @@
 
         <!-- SOCIALS -->
 <div id="modal1" class="modal bottom-sheet">
-        <div class="modal-content center section-title">
+        <div class="modal-content center section-title" id="1">   
       <h4>1A</h4>
-      <div class="lista-uczniow center" id="1">
-      <p style="font-size: 20px; font-weight: 700;">Lista uczniów:</p>
-          <ul>
+      <p style="font-weight: 700; font-size: 20px;">Wychowawca: Muszyński Jan</p>
+      <div class="modal-footer right">
+            <a href="#!" class="modal-action modal-close waves-effect btn-flat btn">Zamknij</a>
+            <a class="waves-effect waves-light btn-flat btn" onclick="edycja()" style="margin-right: 10px;"><i class="fa fa-wrench" style="padding-right: 10px;" aria-hidden="true"></i>Edytuj</a>
+        </div>   
+      <div class="lista-uczniow center glowny">
+      <p>Lista uczniów:</p>
+          <ol>
               <li>Adam Miałczyński</li>
               <li>Adam Miałczyński</li>
               <li>Adam Miałczyński</li>
               <li>Adam Miałczyński</li>
               <li>Adam Miałczyński</li>
-          </ul>
+          </ol>
       </div>
-    </div>        
+    </div>
     <div class="modal-content center section-title" id="2" style="display: none">
       <h4>1A</h4>
-      <div class="lista-uczniow center">
-      <p style="font-size: 20px; font-weight: 700;">Lista uczniów:</p>
-          <ul>
-              <li>Adam</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-          </ul>
+      <div class="modal-footer right">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat btn">Zamknij</a>
+        <a class="waves-effect waves-light btn-flat btn" style="margin-right: 10px;"><i class="fa fa-check-square-o" style="padding-right: 10px;" aria-hidden="true"></i>Zapisz</a>
+        <a class="waves-effect waves-light btn-flat btn" onclick="back()" style="margin-right: 10px;"><i class="fa fa-chevron-left" aria-hidden="true" style="margin-right: 20px;"></i>Wróć</a>
+    </div>
+      <div class="lista-uczniow center chowany">
+      <p>Wychowawca:</p>
+      <div class="input-field col s6">
+                <input placeholder="Imię i nazwisko wychowawcy" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+            </div>
+      <p>Lista uczniów:</p>
+          <ol>
+              <li>
+              <div class="input-field col s6">
+                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+            </div>
+            </li>
+              <li>
+                  <div class="input-field col s6">
+                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+            </div>
+              </li>
+              <li>
+                <div class="input-field col s6">
+                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+            </div>
+              </li>
+              <li>
+                 <div class="input-field col s6">
+                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+              </li>
+              <li>
+              <div class="input-field col s6">
+                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
+                <label for="first_name">Imię i nazwisko</label>
+                </li>
+          </ol>
+        
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect btn-flat btn" style="margin-right: 10px;">Zamknij</a>
-      <a class="waves-effect waves-light btn-flat btn" id="tap" style="margin-right: 20px;">Edytuj<i class="fa fa-wrench" style="padding-left: 10px;" aria-hidden="true"></i></a>
+  </div>
     </div>
-  </div>    
-    </div>
-
-                <!-- FOOTER -->
-    <footer class="page-footer" style="position: absolute; bottom: 0; display: none;" >
-    <div class="row" style="padding-top: 0; margin-bottom: 0;">
-    <div class="col s0 m2 l2">
-    </div>
-
-        <div class="container col s10 m12 l12">
-            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
-                <div class="col l6 s12" id="footer-prawo">
-                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
-                    <p>ul.Kościuszki 26</p>
-                    <p>37-600 Lubaczów</p>
-                </div>
-                <div class="col l4 offset-l2 s12" id="footer-prawo">
-                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
-                    <div class="kontakt-footer">
-                        <p>Alicja Marciniszyn</p>
-                        <p>mgr Beata Strojna-Rozwód</p>
-                        <p>16 632 11 53</p>
-                        <p>sekretariat@lo-lubaczow.pl</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="col s0 m2 l2">
-    </div>
-    </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Copyright webdeveloperzy L.O Lubaczów
-            </div>
-        </div>
-    </footer>
 
 </body>
 <!-- SKRYPTY -->
@@ -476,12 +530,38 @@
     <script type="text/javascript " src="js/materialize.min.js "></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript">
-        $('#tap').on('click',function(){
-    if($('#1').css('display')!='none'){
-    $('#2').show().siblings('div').hide();
-    }else if($('#2').css('display')!='none'){
-        $('#1').show().siblings('div').hide();
-    }
+        function edycja(){
+            $('#1').css('display','none');
+            $('#2').css('display','block');
+        }
+    </script>
+
+    <script type="text/javascript">
+        function back(){
+            $('#2').css('display','none');
+            $('#1').css('display','block');
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+    $(document).on("change",".provider-append input",function(){
+        var allHaveText;
+        var parentDiv = $(this).closest("div.provider-append");
+        emptyInputs=parentDiv.find("input[type=text]").filter(function () {
+            return !this.value;
+        });                  
+        if(emptyInputs.length==0)
+        {
+            newGroup = parentDiv.clone().appendTo(".new-providers"); 
+            newGroup.find("input[type=text]").each(function(){
+                $(this).val("");
+            });
+        }
+    });
+
 });
     </script>
 </html>
