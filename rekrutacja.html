@@ -157,7 +157,7 @@
         <div class="row">
             <div class="col l2 m1 s0"></div>  
             <div class="card center col l8 m10 s12" style="height:auto !important;">           
-                <div class="card-tabs">
+                <div class="card-tabs hide-on-small-only">
                     <ul class="tabs tabs-fixed-width">
                         <li class="tab"><a href="#test4">ZAŁOŻENIA OGÓLNE</a></li>
                         <li class="tab"><a class="active" href="#test5">PROPONOWANE KLASY</a></li>
@@ -165,6 +165,7 @@
                     </ul>
                 </div>
                 <div class="card-content grey lighten-4">
+                	<h5>ZAŁOŻENIA OGÓLNE</h5>
                     <div id="test4">
                         <ol>
                             <li>. O przyjęcie do klas pierwszych liceum mogą ubiegać się absolwenci gimnazjum po złożeniu  w odpowiednim czasie dokumentów.</li>
@@ -172,8 +173,10 @@
                             <li>. Opinia Poradni Specjalistycznej dołączona do dokumentów spełnia wyłącznie funkcję informacyjną i nie stanowi podstawy do przyjęcia kandydata bez spełnienia podstawowych kryteriów.</li>
                         </ol>         
                     </div>
+                    <h5>PROPONOWANE KLASY</h5>
                     <div id="test5" class="card-image"><img class="materialboxed" src="img/classchoice.jpg">
                     </div>
+                    <h5>WYMAGANE DOKUMENTY</h5>
                     <div id="test6">
                         <ol>
                             <li>. Podanie pobrane ze strony <a target="_blank" href="https://podkarpacie.edu.com.pl/Kandydat">Link</a></li>
@@ -194,8 +197,9 @@
             <div class="col l2 m0 s0">
             </div>
             <div class="col l8 m12 s12">
-                <h5>  Przedmioty właściwe dla odpowiednich klas, których oceny na świadectwie ukończenia gimnazjum będą przeliczane na punkty</h5>  
-                <table class="responsive-table">
+                <h5>  Przedmioty właściwe dla odpowiednich klas, których oceny na świadectwie ukończenia gimnazjum będą przeliczane na punkty</h5>
+                <!-- DESKTOPOWA WERSJA TABELI -->  
+                <table class="hide-on-small-only">
                     <thead>
                         <tr>
                             <th>Klasa</th>
@@ -263,10 +267,39 @@
                             <td>Język Angielski</td>
                         </tr>
                     </tbody>
-              </table>
-            </div>
-            <div class="col l2 m0 s0">
-            </div>   
+              	</table>
+              	<!-- MOBILNA WERSJA KARYUZELI -->
+              	 
+				<div class="carousel carousel-slider center hide-on-med-and-up" data-indicators="true">	
+				  	<div class="carousel-item red white-text" href="#one!">
+					    <h2>Matematyczno-fizyczna</h2>
+					    <p class="white-text">Język polski</p>
+					    <p class="white-text">Matematyka</p>
+					    <p class="white-text">Fizyka</p>
+					    <p class="white-text">Język angielski</p>
+				    </div>
+				    <div class="carousel-item amber white-text" href="#two!">
+				      	<h2>Ekonomiczno-informatyczna</h2>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				    </div>
+				    <div class="carousel-item green white-text" href="#three!">
+				      	<h2>Biologiczno-chemiczna+Angielski</h2>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				      	<p class="white-text">Język polski</p>
+				    </div>
+				    <div class="carousel-item blue white-text" href="#four!">
+				      	<h2>Fourth Panel</h2>
+				      	<p class="white-text">This is your fourth panel</p>
+				    </div>
+				</div>
+			</div>
+			<div class="col l2 m0 s0">
+        	</div>
         </div>
         <!--TERMINY REKRUTACJI-->
         <div class="row center">

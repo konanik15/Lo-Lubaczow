@@ -52,11 +52,13 @@
     function mainbutton() {
     var elmnt = document.getElementById("mainbutton");    
      elmnt.scrollIntoView(false);
-};
+    };
 
-  var options = [
+    var options = [
     {selector: '.second-list', offset: 300, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } }
-  ];
-  Materialize.scrollFire(options);
+    ];
+    Materialize.scrollFire(options);
+
+    $('.carousel.carousel-slider').carousel({fullWidth: true});

@@ -344,14 +344,17 @@ nav .brand-logo {
 .first-article
 {
     text-align: center;
-    min-height: 400px !important;
+    min-height: 300px !important;
     font-size: 18px;
-    padding-top: 80px !important;
 }
 .first-article .divider
 {
  margin-top:30px;
  margin-bottom: 30px;
+}
+.card-content h5
+{
+    display: none;
 }
 #classchoice
 {
@@ -371,6 +374,10 @@ nav .brand-logo {
 #table-row h5
 {
     color:#F39C12;
+}
+#table-row #mobile-table th
+{
+    width: 100%;
 }
 .collapsible-row .collapsible
 {
@@ -518,11 +525,37 @@ input[type=password]:focus:not([readonly]) {
         width: 500px !important;
         height: 380px !important;
     }
+    /*REKRUTACJA-MOBILE */
+    .collapsible-row .collapsible li .collapsible-header i {
+    float:left !important;
+    }
+    .collapsible-row .collapsible {
+    text-align: left;
+    }
+    .card-content h5 {
+        display:block;
+        margin: 0;
+        line-height: 1.6;
+        margin-top: 10px;
+        color:;
+    }
+    .card-content #test4,#test5,#test6 {
+        display: block !important;
+        padding-bottom: 15px;
+    }
+    
+    .card-content #test4 ol,#test5 ol,#test6 ol {
+        padding:0;
+    }
 }
 
 @media(max-width: 515px) {
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
+    }
+    /*REKRUTACJA-MOBILE */
+    .collapsible-row .col {
+    padding:0 !important;
     }
 }
