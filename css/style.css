@@ -335,7 +335,8 @@ nav ul li a:hover, nav ul li a.active {
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
 textarea:focus:not([readonly]),
-input[type=text].valid{
+input[type=text].valid,
+input[type=password].valid{
     border-bottom: 1px solid #f39c12 !important;
     box-shadow: 0 1px 0 0 #f39c12 !important;
 }
@@ -416,14 +417,25 @@ input.select-dropdown{
 .modal-footer{
     width: 400px !important;
 }
-.lista-uczniow p{
+.lista-uczniow #LU{
     margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
 }
+.lista-uczniow p{
+    margin-right: 10px 0 10px 0 !important; 
+}
 #first_name{
     width: 300px !important;
     text-align: center;
+}
+input:not([type]):focus:not([readonly]){
+    background-color: #f39c12 !important;
+    border: 2px #f39c12 solid;
+}
+/* ;;;;;;;;EDYCJA PODSTRON;;;;;;;;*/
+.dropdown-content li.optgroup span{
+    background-color: #efefef !important;
 }
 /* media queries */
 @media(max-width: 992px) {

@@ -70,8 +70,13 @@
                       <div class="collapsible-header"><i class="fa fa-plus" aria-hidden="true"></i>Utwórz nową galerię klasową<i class="fa fa-chevron-down right" aria-hidden="true"></i></div>
                       <div class="collapsible-body">
                           <div class="row center" style="padding-top: 15px">
+                          <div class="col s4" style="min-height: 60px;"></div>
+                        <div class="input-field col s4">
+                            <input id="first_name" type="text" value="Klasa" class="validate">
+                            <label for="first_name">Nazwa klasy (np Klasa 3H)</label>
+                        </div>
+                        <div class="col s4"></div>
                             <div class="col l7">
-                                <form action="#">
                                 <div class="file-field input-field" style="width: 90%; margin-left: 20px;">
                                   <div class="btn">
                                     <span><i class="fa fa-plus-circle" style="padding-right: 10px;" aria-hidden="true"></i>Dodaj zdjęcie</span>
@@ -81,20 +86,21 @@
                                     <input class="file-path validate" type="text">
                                   </div>
                                 </div>
-                            </form>
                             </div>
-                            <div style="width: 100%;" class="right-align"><a class="waves-effect waves-light btn-flat btn" style="margin-right: 10px;"><i class="fa fa-check-square-o" style="padding-right: 10px;" aria-hidden="true"></i>Utwórz</a></div>
+                            <div style="width: 100%;" class="right-align">
+                            <input type="submit" class="btn" value="Utwórz" name="submit" style="margin-right: 20px;" />
+                            </div>
                             <div class="input-field col l5">
                               <input id="first_name" type="text" class="validate">
                               <label for="first_name">Imię i nazwisko wychowawcy</label>
                             </div>
-                            <div class="new-providers col l12">
-                                <div class="provider-append center-align" id="toggleExtraProvider">
-                                <div class="form-group input-field col l4">
-                                    <input type="text" class="form-control validate" id="practiceProvider"/>
-                                    <label>Imię i nazwisko ucznia</label>
+                            <div class="form-group col l4">
+                                <div class="input-field col s12">
+                                  <textarea style="font-size: 20px;" id="textarea3" class="materialize-textarea"></textarea>
+                                  <label for="textarea3">Imiona i nazwiska uczniów</label>
                                 </div>
-                            </div>
+                                <button class="btn btn-success btn-xs" type="button" id="AddMoreFileBox">Dodaj</button>
+                        </div>
 
                             
 <!--                     <div class="new-providers">
@@ -356,7 +362,8 @@
             </div>
             <div class="col l3"></div>
         </div>
-                <div class="row" id="klasy3" style="display: none;">
+                <!-- KLASY TRZECIE -->
+        <div class="row" id="klasy3" style="display: none;">
             <div class="col l3"></div>
             <div class="col l6">
                 <ul class="collapsible popout" data-collapsible="accordion">
@@ -474,20 +481,23 @@
 <div id="modal1" class="modal bottom-sheet">
         <div class="modal-content center section-title" id="1">   
       <h4>1A</h4>
-      <p style="font-weight: 700; font-size: 20px;">Wychowawca: Muszyński Jan</p>
+      <p style="font-weight: 700; font-size: 20px; margin-bottom: 0px;">Wychowawca: Muszyński Jan</p>
       <div class="modal-footer right">
             <a href="#!" class="modal-action modal-close waves-effect btn-flat btn">Zamknij</a>
             <a class="waves-effect waves-light btn-flat btn" onclick="edycja()" style="margin-right: 10px;"><i class="fa fa-wrench" style="padding-right: 10px;" aria-hidden="true"></i>Edytuj</a>
         </div>   
       <div class="lista-uczniow center glowny">
-      <p>Lista uczniów:</p>
-          <ol>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-              <li>Adam Miałczyński</li>
-          </ol>
+      <p id="LU">Lista uczniów:</p>
+          
+              <p>Adam Miałczyński</p>
+              <p>Adam Miałczyński</p>
+              <p>Adam Miałczyński</p>
+              <p>Adam Miałczyński</p>
+              <p>Adam Miałczyński</p>
+              <p>Adam Miałczyński</p>
+            
+              
+
       </div>
     </div>
     <div class="modal-content center section-title" id="2" style="display: none">
@@ -504,36 +514,14 @@
                 <label for="first_name">Imię i nazwisko</label>
             </div>
       <p>Lista uczniów:</p>
-          <ol>
+          <ul>
               <li>
               <div class="input-field col s6">
-                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
-                <label for="first_name">Imię i nazwisko</label>
+                <textarea style="font-size: 20px;" class="materialize-textarea"></textarea>
+                <label for="textarea1">Imiona i nazwiska uczniów</label>
             </div>
             </li>
-              <li>
-                  <div class="input-field col s6">
-                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
-                <label for="first_name">Imię i nazwisko</label>
-            </div>
-              </li>
-              <li>
-                <div class="input-field col s6">
-                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
-                <label for="first_name">Imię i nazwisko</label>
-            </div>
-              </li>
-              <li>
-                 <div class="input-field col s6">
-                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
-                <label for="first_name">Imię i nazwisko</label>
-              </li>
-              <li>
-              <div class="input-field col s6">
-                <input value="Adam Miałczyński" id="first_name" type="text" class="validate">
-                <label for="first_name">Imię i nazwisko</label>
-                </li>
-          </ol>
+          </ul>
         
       </div>
     </div>
@@ -557,35 +545,15 @@
         function back(){
             $('#2').css('display','none');
             $('#1').css('display','block');
-        }
+        } 
 
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-    $(document).on("change",".provider-append input",function(){
-        var allHaveText;
-        var parentDiv = $(this).closest("div.provider-append");
-        emptyInputs=parentDiv.find("input[type=text]").filter(function () {
-            return !this.value;
-        });                  
-        if(emptyInputs.length==0)
-        {
-            newGroup = parentDiv.clone().appendTo(".new-providers"); 
-            newGroup.find("input[type=text]").each(function(){
-                $(this).val("");
-            });
-        }
-    });
-
-});
     </script>
 <script>
 function Del() {
         swal({
       title: 'Czy chcesz usunąć galerię?',
       text: "Nie będzie możliwości przywrócenia dokonanych zmian!",
+      time: 10000,
       type: 'question',
       showCancelButton: true,
       cancelButtonText: 'Anuluj',
@@ -601,5 +569,19 @@ function Del() {
   )
 })
 }
+</script>
+<script> 
+    $('#textarea1').val('New Text');
+  $('#textarea1').trigger('autoresize');
+
+</script>
+<script> 
+$('#textarea3').keypress(function(event) {
+  if (event.which == 13) {
+    event.preventDefault();
+    this.value = this.value + "\n";
+  }
+});
+
 </script>
 </html>

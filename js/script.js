@@ -1,4 +1,4 @@
-        $(document).ready(function(){
+$(document).ready(function(){
     $('#wybor').on('change', function() {
       if ( this.value == '1')
       {
