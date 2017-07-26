@@ -10,58 +10,78 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.10&appId=822789481235838";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- NAVBARY -->
     <nav class="sticky">
         <div class="nav-wrapper z-depth-5">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="dropdown-button" data-activates='dropdown1' href="#">O nas</a>
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton()">
+             <i class="fa fa-heartbeat" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
+                <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
                     <ul id='dropdown1' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">O szkole</a></li>
-                        <li><a href="#!">Kadra/pracownicy</a></li>
-                        <li><a href="#!">Klasy/profile</a></li>
-                        <li><a href="#!">Dokumenty</a></li>
+                        <li><a href="#! ">O szkole</a></li>
+                        <li><a href="#! ">Kadra/pracownicy</a></li>
+                        <li><a href="#! ">Klasy/profile</a></li>
+                        <li><a href="#! ">Dokumenty</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Plan lekcji</a></li>
-                <li><a href="#">Dziennik</a></li>
-                <li><a class="dropdown-button" data-activates='dropdown2' href="#">Dla gimnazjalisty</a>
+                <li><a href="# ">Plan lekcji</a></li>
+                <li><a href="# ">Dziennik</a></li>
+                <li><a class="dropdown-button " data-activates='dropdown2' href="# ">Dla gimnazjalisty</a>
                     <ul id='dropdown2' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">Dlaczego my ?</a></li>
-                        <li><a href="#!">Rekrutacja</a></li>
+                        <li><a href="#! ">Dlaczego my ?</a></li>
+                        <li><a href="#! ">Rekrutacja</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-button" data-activates='dropdown3' href="#">Dla ucznia</a>
+                <li><a class="dropdown-button " data-activates='dropdown3' href="# ">Dla ucznia</a>
                     <ul id='dropdown3' class='dropdown-content z-depth-5'>
-                        <li><a href="#!">Samorząd uczniowski</a></li>
-                        <li><a href="#!">Podręczniki</a></li>
-                        <li><a href="#!">Matura</a></li>
-                        <li><a href="#!">Stypendia</a></li>
-                        <li><a href="#!">Galerie</a></li>
-                        <li><a href="#!">//cos tam po rusku</a></li>
-                        <li><a href="#!">Biblioteka</a></li>
+                        <li><a href="#! ">Samorząd uczniowski</a></li>
+                        <li><a href="#! ">Podręczniki</a></li>
+                        <li><a href="#! ">Matura</a></li>
+                        <li><a href="#! ">Stypendia</a></li>
+                        <li><a href="#! ">Galerie</a></li>
+                        <li><a href="#! ">//cos tam po rusku</a></li>
+                        <li><a href="#! ">Biblioteka</a></li>
                     </ul>
                 </li>
-                <li><a class="dropdown-button" data-activates='dropdown4' href="#">Dla rodzica</a>
+                <li><a class="dropdown-button " data-activates='dropdown4' href="# ">Dla rodzica</a>
                     <ul id='dropdown4' class='dropdown-content z-depth-5'>
-                        <li><a href="wspolpraca.html" class='dropdown-content z-depth-5'>Współpraca z rodzicami</a></li>
-                        <li><a href="#!">Konsultacje</a></li>
-                        <li><a href="#!">Rada Rodziców</a></li>
-                        <li><a href="#!">Regulamin</a></li>
+                        <li><a href="#! ">Współpraca z rodzicami</a></li>
+                        <li><a href="#! ">Rada Rodziców</a></li>
+                        <li><a href="#! ">Regulamin</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><a href="# ">Kontakt</a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                 </li>
             </ul>
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
+            </div>
+      
+            <!-- MOBILNE -->
             <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
                 <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
                     <ul id='dropdown-1' class='dropdown-content z-depth-4'>
                         <li><a href="#!">O szkole</a></li>
@@ -98,171 +118,106 @@
                     </ul>
                 </li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#" style="color: #fff !important;"><i class="material-icons left">search</i></a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="szukajka2()"><i class="material-icons left">search</i></a></li>
+                <li style="position: static;">
+                    <div id="szukaj2" class="szukaj center" style="position: inherit; margin-top: 10px;">
+                        <input type="text" class="szukaj-mobile" placeholder="Szukaj" style="position: inherit;">
+                        <button class="btn waves-effect waves-light center" id="submit" type="button" style="background-color: #f39c12; position: inherit;" ><i class="fa fa-paper-plane"></i>
+                </button>
+                    </div>
+                </li>
             </ul>
-        </div>
-    </nav>
-    <div class="parallax-container materialboxed">
-        <div class="parallax"><img src="wallapaper.jpg"></div>
-    </div>
-    <!-- <div class="section white">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax2.jpg"></div>
-    </div> -->
-    <div class="row center">
-        <div class="section-title">
-            <h4><a href="wspolpraca.html">Aktualności</a></h4>
-        </div>
-    </div>
-    <div class="fixed-action-btn">
-        <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3";" onclick="openFixedButton()"><!-- <i class="fa fa-question" style="color:#f39c12; background-color: rgba(47, 52, 62, 0.91); " aria-hidden="true"></i> -->
-        <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%;" ></i></a>
-    </div>
-    <div class="tap-target" data-activates="menu" style="background-color: #34363d !important">
-        <div class="tap-target-content center">
-            <h5>Test</h5>
-            <p style=" color: #f39c12; margin-bottom: 0px;">Test</p>
-           
-        </div>
-    </div>
-    <div class="row" style="margin-bottom: 50px;">
-        <div class="container">
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 maja 2017r.</p>
-                        <p>W dniu 23 maja 2017 roku odbył się w naszej szkole Konkurs Ortograficzny z Języka Francuskiego. W konkursie wzięli udział uczniowie.</p>
-                    </div>
-                    <div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
+            
+
+
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
                 </div>
             </div>
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
-                        <p>2 czerwca w IV LO w Tarnowie odbył się Konkurs Piosenki Francuskiej . W tegorocznej XIX już edycji konkursu uczestniczyło 50 uczniów </p>
-                    </div>
-                    <div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
+        </nav>
+        
+
+        <!-- SAMORZĄD -->
+        <div class="samorzad">
+            <div class="row center">
+                <div class="section-title">
+                    <h4>Samorząd uczniowski</h4>
                 </div>
             </div>
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
-                        <p>Po zapoznaniu się z ofertą naszej szkoły zapraszamy Was do wyboru języków obcych ( przy składaniu oryginałów świadectw ukończenia gimnazjum) których chcielibyście się uczyć.</p>
-                    </div>
-                    <div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Wyniki konkursu ortograficznego z języka francuskiego 2017 II edycja</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 maja 2017r.</p>
-                        <p>W dniu 23 maja 2017 roku odbył się w naszej szkole Konkurs Ortograficzny z Języka Francuskiego. W konkursie wzięli udział uczniowie.</p>
-                    </div>
-                    <<div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Sukces naszych uczennic na Konkursie Piosenki Francuskiej w Tarnowie</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
-                        <p>2 czerwca w IV LO w Tarnowie odbył się Konkurs Piosenki Francuskiej . W tegorocznej XIX już edycji konkursu uczestniczyło 50 uczniów </p>
-                    </div>
-                    <div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col l4 m6 s12">
-                <div class="card small z-depth-4">
-                    <div class="card-image">
-                        <img class="materialboxed" src="wallapaper.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h6>Uwaga Gimnazjaliści - przyszli uczniowie naszej szkoły</h6>
-                        <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> 25 września 2017r.</p>
-                        <p>Po zapoznaniu się z ofertą naszej szkoły zapraszamy Was do wyboru języków obcych ( przy składaniu oryginałów świadectw ukończenia gimnazjum) których chcielibyście się uczyć.</p>
-                    </div>
-                    <div class="card-action" >
-                        <a class="waves-effect waves-light btn button-more">Czytaj więcej...</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- SAMORZĄD -->
-    <div class="samorzad">
-        <div class="row center" style="padding-top: 25px;">
-            <div class="section-title">
-                <h4>Samorząd uczniowski</h4>
-            </div>
-        </div>
-        <div class="card" id="samorzadcard" style="margin-top: 45px;">
+        <div class="card" id="samorzadcard"">
             <div class="card-content center z-depth-4">
-                <span>
-                    <p><h5>Skład samorządu uczniowskiego w roku szkolnym 2016/2017</h></p>
-                    <br></br>
-                    <p><h4><b>Katarzyna Wnuk &nbsp - &nbsp Przewodniczący</b></h></p>
-                    <p><h5>Wiktoria Makuch &nbsp - &nbsp Zastępca przewodniczącego </h></p>
-                    <br>
-                    <p>Jakub Mach &nbsp - &nbsp Sekretarz</p>
-                    <br>
-                    <p>Angelika Wach &nbsp - &nbsp Skarbnik</p>
-                    <br>
-                    <p><b><h4>mgr Ewa Żuk &nbsp - &nbsp Opiekun SU</h></b></p>
-                </span>
+                <div class="hide-on-med-and-down">
+                    <span>
+                        <p><h4>Skład samorządu uczniowskiego w roku szkolnym 2016/2017</h></p>
+                        <br></br>
+                        <p><h5><b>Katarzyna Wnuk &nbsp - &nbsp Przewodniczący</b></h></p>
+                        <br>
+                        <p>Wiktoria Makuch &nbsp - &nbsp Zastępca przewodniczącego</p>
+                        <br>
+                        <p>Jakub Mach &nbsp - &nbsp Sekretarz</p>
+                        <br>
+                        <p>Angelika Wach &nbsp - &nbsp Skarbnik</p>
+                        <br>
+                        <p><b><h5>mgr Ewa Żuk &nbsp - &nbsp Opiekun SU</h></b></p>
+                    </span>
+                </div>
+
+                <div class="hide-on-large-only">
+                    <span>
+                        <p><h5>Skład samorządu uczniowskiego w roku szkolnym 2016/2017</h></p>
+                        <br></br>
+                        <p><h5><b>Katarzyna Wnuk  :  Przewodniczący</b></h></p>
+                        <br>
+                        <p>Wiktoria Makuch  :  Zastępca przewodniczącego</p>
+                        <br>
+                        <p>Jakub Mach  :  Sekretarz</p>
+                        <br>
+                        <p>Angelika Wach  :  Skarbnik</p>
+                        <br>
+                        <p><b><h5>mgr Ewa Żuk  :  Opiekun SU</h></b></p>
+                    </span>
+                </div>
             </div>
             <div class="card-content grey lighten-4">
-            <div>
-                <img class="materialboxed" src="img/samorzad.jpg" data-caption="Skład samorządu uczniowskiego w roku szkolnym 2016/2017" width="100%">
+            <div class="samorzad-img">
+                <center><img class="materialboxed" src="img/samorzad.jpg" width="90%"></center>
             </div>
+            <div class="hide-on-small-only">
+                <div class="samorzadpage">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsulolubaczow%2F%3Fref%3Dbr_rs&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId=822789481235838" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
+            <div class="hide-on-med-and-up">
+                <div class="samorzadpage">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsulolubaczow%2F%3Fref%3Dbr_rs&width=200&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId=822789481235838" width="200" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>    
+            </div>    
         </div>
     </div>
-    <!-- KARUZELA -->
-    <div class="carousel" style="background-color: #f5f5f5; padding:40px;">
-        <a class="carousel-item z-depth-4" href="#one!"><img src="slajdy/slajd1.png"></a>
-        <a class="carousel-item z-depth-4" href="#two!"><img src="slajdy/slajd2.png"></a>
-        <a class="carousel-item z-depth-4" href="#three!"><img src="slajdy/slajd3.png"></a>
-        <a class="carousel-item z-depth-4" href="#four!"><img src="slajdy/slajd4.png"></a>
-        <a class="carousel-item z-depth-4" href="#five!"><img src="slajdy/slajd5.png"></a>
     </div>
-    <!-- FOOTER -->
-    <footer class="page-footer">
-        <div class="container">
+
+        <!-- SOCIALS -->
+        <div class="social">
+            <div class="social_icons center-align">
+                <ul class="center-align" style="display: inline-flex;">
+                     <li><a href="https://www.facebook.com/lolubaczow/" target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://lo-lubaczow.pl/"  target="_blank" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+                    
+                </ul>
+            </div>
+        </div>    
+
+
+                <!-- FOOTER -->
+    <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
+    <footer class="page-footer" >
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
             <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
                 <div class="col l6 s12" id="footer-prawo">
                     <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
@@ -280,49 +235,20 @@
                 </div>
             </div>
         </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
         <div class="footer-copyright">
             <div class="container">
                 © 2017 Copyright webdeveloperzy L.O Lubaczów
             </div>
         </div>
     </footer>
-    <!-- SKRYPTY -->
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="materialize.min.js"></script>
-    <script>
-    var width = screen.width;
-    $(".button-collapse").sideNav();
-    $('.parallax').parallax();
-    var showNav = function() {
-        $('.button-collapse').sideNav('show');
-    }
 
-    if (width > 992) {
-        $('.dropdown-button').dropdown({
-            hover: true, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    } else {
-        $('.dropdown-button').dropdown({
-            hover: false, // Activate on hover
-            belowOrigin: true, // Displays dropdown below the button
-            // constrainWidth: true,
-
-        });
-    }
-
-    var openFixedButton = function(){
-        $('.tap-target').tapTarget('open');
-    }
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.carousel').carousel();
-
-    });
-    </script>
 </body>
+<!-- SKRYPTY -->
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript" src="js/script.js"></script>   
 
 </html>
