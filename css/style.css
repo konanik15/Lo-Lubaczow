@@ -380,7 +380,7 @@ nav .brand-logo {
 }
 #table-row .carousel
 {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .collapsible-row
 {
@@ -390,7 +390,6 @@ nav .brand-logo {
 {
   background-color:#d1d1d1;
   opacity: 0.8;
-  text-align: center;
 }
 .collapsible-row .collapsible li .collapsible-header
 {
@@ -400,8 +399,13 @@ nav .brand-logo {
 {
     display:inline;
     color:#000000;
-    float:none !important; 
 }
+.collapsible-row .collapsible li .collapsible-header i {
+    float:left !important;
+    }
+    .collapsible-row .collapsible {
+    text-align: left;
+    }
 .signup
 {
     text-align: center;
@@ -470,15 +474,23 @@ nav .brand-logo {
     padding-top:20px;
     padding-bottom:20px;
     color: #E28B01;
-    background-color: #E4E4E4;
 }
 /* |||||||||||||| O-SZKOLE |||||||||||| */
-.o-szkole-container h1,.o-szkole-container h2,.o-szkole-container h3 {
+#historia-szkoly-container
+{
+    background-color: #f5f5f5;
+}
+#historia-szkoly-container .row #text-cont ul li
+{
+    list-style-type:disc;
+}
+.timeline-container h1,.timeline-container h2,.timeline-container h3 {
   font-weight: 300;
 }
 
-.o-szkole-container {
-  padding: 1em;
+.timeline-container {
+  padding: 1em 1em 0 1em;
+  margin-top: 100px !important;
 }
 
 .timeline {
@@ -490,17 +502,18 @@ nav .brand-logo {
   position: absolute;
   height: 100%;
   width: 5px;
-  background: #dddddd;
+  background-color:#2f343e;
   left: 0;
 }
-.timeline h2 {
-  background: #dddddd;
+.timeline h3 {
+  background-color:#2f343e;
   max-width: 6em;
   margin: 0 auto 1em;
   padding: 0.5em;
   text-align: center;
   position: relative;
-  clear: both;
+  color: #f39c12;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
 }
 .timeline ul {
   list-style: none;
@@ -508,7 +521,8 @@ nav .brand-logo {
   z-index: 1;
 }
 .timeline li {
-  background: #dddddd;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+  background: #FFFFFF;
   padding: 1em;
   margin-bottom: 1em;
   position: relative;
@@ -526,45 +540,42 @@ nav .brand-logo {
 .timeline h3 {
   margin-top: 0;
 }
-.timeline time {
-  font-style: italic;
+.timeline h4 {
+  color: #c6bfb7;
+}
+#text-cont{
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+}
+#text-cont h5
+{
+    text-align: center;
+}
+#patron-container h3
+{
+    color:#f39c12;
+    text-align:center;
+}
+#patron-container img
+{
+    width:70%;
+    margin-left:15%;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
 }
 
-@media screen and (min-width: 40em) {
-  .o-szkole-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline ul {
-    padding-left: 0;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .timeline li {
-    width: 42%;
-  }
-  .timeline li:nth-child(even) {
-    float: right;
-    margin-top: 2em;
-  }
-  .timeline li:nth-child(odd) {
-    float: left;
-  }
-  .timeline li:nth-child(odd):before {
-    border-top: 1em solid #dddddd;
-    border-right: 1em solid transparent;
-    right: -1em;
-    left: auto;
-  }
-  .timeline li:nth-of-type(2n+1) {
-    clear: both;
-  }
+#patron-container .card-content
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+    height: 107%;
 }
-
+#patron-container .card
+{
+    height:auto !important;
+}
+#patron-container .card-title
+{
+    text-align: center;
+}
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
@@ -693,8 +704,10 @@ input[type=password]:focus:not([readonly]) {
     padding:0 !important;
     }
 }
+
+/*TIMELINE-HISTORIA-SZKOLY*/
 @media screen and (min-width: 40em) {
-  .o-szkole-container {
+  .timeline-container {
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -717,6 +730,10 @@ input[type=password]:focus:not([readonly]) {
   .timeline li:nth-child(odd) {
     float: left;
   }
+  .timeline li:nth-child(4) {
+    margin-top: 150px;
+  }
+
   .timeline li:nth-child(odd):before {
     border-top: 1em solid #dddddd;
     border-right: 1em solid transparent;
