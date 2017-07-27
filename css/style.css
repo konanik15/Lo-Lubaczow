@@ -29,7 +29,6 @@ nav ul a:hover {
     border-bottom: 1px #f39c12 solid;
     margin-top: -1px;
 }
-
 nav .brand-logo {
     margin-left: 50px;
     color: #f39c12;
@@ -379,6 +378,14 @@ nav .brand-logo {
 {
     width: 100%;
 }
+#table-row .carousel
+{
+    margin-top: 20px;
+}
+.collapsible-row
+{
+    margin-bottom: 0 !important;
+}
 .collapsible-row .collapsible
 {
   background-color:#d1d1d1;
@@ -403,39 +410,159 @@ nav .brand-logo {
 }
 .signup .divider
 {
-    margin-top:80px;
-    margin-bottom:50px;
+    margin-top:50px;
+    margin-bottom:30px;
 }
 /* ==============DLACZEGO - MY ============== */
-.transition-list .btn-large
-{
-    margin-top: 100px;
-     z-index: 100;
-}
-.transition-list ul li
-{
-opacity: 0;
-margin-top: 40px;
-font-size: 19px;
-}
-.transition
-.transition-list ul:first-child li:first-child
+#dlaczego-my-cont .section-title h4
 {
     margin-top: 150px;
-    font-size: 22px;
-    padding-bottom: 20px;   
-    padding-top: 20px;   
 }
-.transition-list ul:first-child li:first-child::after
+.akwarium-img-cont
 {
-   content: "";
+    margin-top: 20px;
+    position: relative;
+}
+.akwarium-img-cont:hover .overlay 
+{
+    width: 100%;
+}
+.akwarium-img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay 
+{
     position: absolute;
-    width: 200px;
-    height: 1px;
-    background-color: #f39c12 !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(47, 52, 62, 0.91) !important;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .9s ease;
+    opacity: 0.85;
+}
+.overlay-text 
+{
+    white-space: nowrap; 
+    color: #F39C12;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
     left: 50%;
-    margin-left: -100px;
-    margin-top: 68px;  
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+#dlaczego-my-cont ul li
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    text-align: left;
+}
+#dlaczego-my-cont h6
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    color: #E28B01;
+    background-color: #E4E4E4;
+}
+/* |||||||||||||| O-SZKOLE |||||||||||| */
+.o-szkole-container h1,.o-szkole-container h2,.o-szkole-container h3 {
+  font-weight: 300;
+}
+
+.o-szkole-container {
+  padding: 1em;
+}
+
+.timeline {
+  position: relative;
+  overflow: auto;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background: #dddddd;
+  left: 0;
+}
+.timeline h2 {
+  background: #dddddd;
+  max-width: 6em;
+  margin: 0 auto 1em;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
+.timeline ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  z-index: 1;
+}
+.timeline li {
+  background: #dddddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.timeline li:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 1em solid #dddddd;
+  border-left: 1em solid transparent;
+  position: absolute;
+  left: -1em;
+  top: 0;
+}
+.timeline h3 {
+  margin-top: 0;
+}
+.timeline time {
+  font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+  .o-szkole-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline ul {
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .timeline li {
+    width: 42%;
+  }
+  .timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+  }
+  .timeline li:nth-child(odd) {
+    float: left;
+  }
+  .timeline li:nth-child(odd):before {
+    border-top: 1em solid #dddddd;
+    border-right: 1em solid transparent;
+    right: -1em;
+    left: auto;
+  }
+  .timeline li:nth-of-type(2n+1) {
+    clear: both;
+  }
 }
 
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
@@ -498,6 +625,13 @@ input[type=password]:focus:not([readonly]) {
     .carousel a {
         width: 200px !important;
     }
+    #table-row h5{
+    margin-left: 7px;
+    }
+
+    #table-row .col{
+        padding: 0 !important;
+    }
 }
 
 @media(max-width: 1600px) {
@@ -558,4 +692,38 @@ input[type=password]:focus:not([readonly]) {
     .collapsible-row .col {
     padding:0 !important;
     }
+}
+@media screen and (min-width: 40em) {
+  .o-szkole-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline ul {
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .timeline li {
+    width: 42%;
+  }
+  .timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+  }
+  .timeline li:nth-child(odd) {
+    float: left;
+  }
+  .timeline li:nth-child(odd):before {
+    border-top: 1em solid #dddddd;
+    border-right: 1em solid transparent;
+    right: -1em;
+    left: auto;
+  }
+  .timeline li:nth-of-type(2n+1) {
+    clear: both;
+  }
 }
