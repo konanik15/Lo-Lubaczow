@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>LO Lubaczów </title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBARY -->
+    <nav class="sticky">
+        <div class="nav-wrapper z-depth-5">
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
+             <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
+                <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
+                    <ul id='dropdown1' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">O szkole</a></li>
+                        <li><a href="#! ">Kadra/pracownicy</a></li>
+                        <li><a href="#! ">Klasy/profile</a></li>
+                        <li><a href="#! ">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Plan lekcji</a></li>
+                <li><a href="# ">Dziennik</a></li>
+                <li><a class="dropdown-button " data-activates='dropdown2' href="# ">Dla gimnazjalisty</a>
+                    <ul id='dropdown2' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Dlaczego my ?</a></li>
+                        <li><a href="#! ">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown3' href="# ">Dla ucznia</a>
+                    <ul id='dropdown3' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Samorząd uczniowski</a></li>
+                        <li><a href="#! ">Podręczniki</a></li>
+                        <li><a href="#! ">Matura</a></li>
+                        <li><a href="#! ">Stypendia</a></li>
+                        <li><a href="#! ">Galerie</a></li>
+                        <li><a href="#! ">//cos tam po rusku</a></li>
+                        <li><a href="#! ">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown4' href="# ">Dla rodzica</a>
+                    <ul id='dropdown4' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Współpraca z rodzicami</a></li>
+                        <li><a href="#! ">Rada Rodziców</a></li>
+                        <li><a href="#! ">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Kontakt</a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                 </li>
+            </ul>
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
+            </div>
+      
+
+
+            <!-- MOBILNE -->
+            <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
+                <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
+                    <ul id='dropdown-1' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">O szkole</a></li>
+                        <li><a href="#!">Kadra/pracownicy</a></li>
+                        <li><a href="#!">Klasy/profile</a></li>
+                        <li><a href="#!">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Plan lekcji</a></li>
+                <li><a href="#">Dziennik</a></li>
+                <li><a class="dropdown-button" data-activates='dropdown-2' href="#">Dla gimnazjalisty</a>
+                    <ul id='dropdown-2' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Dlaczego my ?</a></li>
+                        <li><a href="#!">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-3' href="#">Dla ucznia</a>
+                    <ul id='dropdown-3' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Samorząd uczniowski</a></li>
+                        <li><a href="#!">Podręczniki</a></li>
+                        <li><a href="#!">Matura</a></li>
+                        <li><a href="#!">Stypendia</a></li>
+                        <li><a href="#!">Galerie</a></li>
+                        <li><a href="#!">//cos tam po rusku</a></li>
+                        <li><a href="#!">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-4' href="#">Dla rodzica</a>
+                    <ul id='dropdown-4' class='dropdown-content z-depth-4'>
+                        <li id="to"><a href="#!">Współpraca z rodzicami</a></li>
+                        <li><a href="#!">Konsultacje</a></li>
+                        <li><a href="#!">Rada Rodziców</a></li>
+                        <li><a href="#!">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="szukajka2()"><i class="material-icons left">search</i></a></li>
+                <li style="position: static;">
+                    <div id="szukaj2" class="szukaj center" style="position: inherit; margin-top: 10px;">
+                        <input type="text" class="szukaj-mobile" placeholder="Szukaj" style="position: inherit;">
+                        <button class="btn waves-effect waves-light center" id="submit" type="button" style="background-color: #f39c12; position: inherit;" ><i class="fa fa-paper-plane"></i>
+                </button>
+                    </div>
+                </li>
+            </ul>
+            
+
+
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
+                </div>
+            </div>
+        </nav>
+                <!-- TUTAJ ŁADUJECIE CONTENT STRONY -->
+
+		<div class="row" style="margin-bottom: 50px; padding-top: 0px;">
+        <div class="container" style="padding-top: 75px;">
+				<div class="row center">
+					<div class="section-title">
+						<h4>Biblioteka</h4>
+					</div>
+				</div>
+
+				<h4>Regulamin Biblioteki Szkolnej Liceum Ogólnokształcącego<br /> im. Tadeusza Kościuszki w Lubaczowie</h4>
+				
+			<!-- Początek collapsible -->
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">turned_in_not</i>
+								I. Postanowienia ogólne
+							<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+						</div>
+						<div class="collapsible-body">
+						<span>
+					<ol>
+						<li>1. Biblioteka szkolna jest:
+							<ul>
+								<li>- interdyscyplinarną pracownią</li>
+								<li>- ośrodkiem edukacji czytelniczo - medialnej uczniów</li>
+								<li>- ośrodkiem informacji dla uczniów, rodziców, nauczycieli i innych pracowników szkoły</li>
+							</ul>
+						</li>	 
+
+						<li>2. Biblioteka uczestniczy w pełnieniu podstawowych funkcji szkoły:
+							<ul>
+								<li>- kształcąco – wychowawczej</li>
+								<li>- diagnostycznej</li>
+								<li>- kulturalno - wychowawczej</li>
+							</ul>
+						</li>
+
+						<li>3. Biblioteka szkolna służy realizacji programu nauczania i wychowania, wspiera doskonalenie zawodowe nauczycieli, uczestniczy w przygotowaniu uczniów do samokształcenia i korzystania z innych bibliotek i środków informacji.
+						</li>
+
+						<li>4. Bezpośredni nadzór nad biblioteką szkolną sprawuje Dyrektor Szkoły.</li>
+ 
+
+						<li>5. Dyrektor Szkoły zapewnia środki finansowe na sprawną działalność biblioteki w tym: wyposażenie, książki i inne pomoce dydaktyczne.</li>
+ 
+
+						<li>6. Dyrektor Szkoły zatrudnia odpowiednio wykwalifikowaną kadrę pedagogiczną, zgodnie z obowiązującymi przepisami prawa oraz w porozumieniu z Organem Prowadzącym Szkołę.</li>
+ 
+
+						<li>7. W przypadku zatrudnienia dwóch lub więcej nauczycieli bibliotekarzy, Dyrektor Szkoły powierza jednemu z nich funkcję koordynatora, który odpowiada za całokształt pracy i prawidłowe funkcjonowanie biblioteki szkolnej i czytelni.</li>
+ 
+
+						<li>8. Biblioteka szkolna składa się pomieszczenia z wydzieloną:
+							<ul>
+								<li>- wypożyczalnią i stanowiskiem komputerowym dla nauczyciela bibliotekarza</li>
+								<li>- czytelnią umożliwiającą prowadzenie przysposobienia czytelniczo-informacyjnego z grupą uczniów przy stanowiskach komputerowych</li>
+							</ul>
+						</li>
+
+						<li>9. Biblioteka szkolna gromadzi:
+							<ul>
+								<li>- książki zgodne z potrzebami szkoły oraz zainteresowaniami uczniów i nauczycieli</li>
+								<li>- czasopisma dla nauczycieli i uczniów</li>
+								<li>- publikacje i pomoce dydaktyczne opracowane przez nauczycieli</li>
+								<li>- płyty CD</li>
+								<li>- ulotki i informatory uczelni wyższych</li>
+								<li>- przepisy oświatowe i inne</li>
+								<li>- inne pomoce dydaktyczne itp</li>
+							</ul>
+						</li>
+ 
+
+						<li>10. Wydatki na bibliotekę pokrywane są z budżetu szkoły:
+							<ul>
+								<li>- wysokość kwoty przeznaczonej na potrzeby biblioteki ustalana jest przez dyrektora szkoły</li>
+								<li>- propozycje wydatków na doposażenie księgozbioru bibliotecznego zatwierdza Dyrektor szkoły</li>
+								<li>- działalność biblioteki może być dotowana przez Radę Rodziców i innych ofiarodawców</li>
+							</ul>
+						</li>
+							 
+
+						<li>11. Czas pracy biblioteki:
+							<ul>
+								<li>- biblioteka i czytelnia udostępnia swoje zbiory w czasie trwania zajęć dydaktyczno wychowawczych, zgodnie z organizacją roku szkolnego</li>
+								<li>- czas otwarcia biblioteki uzgodniony jest z Dyrektorem szkoły</li>
+							</ul>
+						</li>
+							 
+
+						<li>12. Zadania nauczyciela bibliotekarza obejmują:
+								<li>1) W zakresie pracy pedagogicznej:</li>
+									<ul>
+										<li>- udostępnianie zbiorów (książek i innych źródeł informacji)</li>
+										<li>- udzielanie informacji bibliotecznych, katalogowych, bibliograficznych, rzeczowych i tekstowych</li>
+										<li>- wyrabianie i pogłębianie u uczniów nawyku czytania i uczenia się</li>
+										<li>- informowanie uczniów i nauczycieli o nowych nabytkach</li>
+										<li>- dostarczanie uczniom i nauczycielom środków dydaktycznych</li>
+										<li>- prowadzenie działań rozwijających i pobudzających indywidualne zainteresowania uczniów</li>
+										<li>- wspomaganie działań szkoły w realizacji programów nauczania, szkolnego programu wychowawczego i programu profilaktyki</li>
+										<li>- prowadzenie zajęć rozwijających czytelnictwo</li>
+										<li>- tworzenie warunków do poszukiwania, porządkowania i wykorzystywania informacji z różnych źródeł oraz efektywnego posługiwania się technologią informacyjną</li>
+										<li>- prowadzenie różnych form informacji o książkach</li>
+										<li>- przysposobienie czytelnicze i kształcenie uczniów jako użytkowników informacji w formie pracy indywidualnej z czytelnikiem, zajęć grupowych i w miarę możliwości wycieczek do innych bibliotek</li>
+										<li>- udzielanie pomocy nauczycielom, wychowawcom, opiekunom, organizacjom młodzieżowym i kołom zainteresowań w przeprowadzeniu różnych form zajęć dydaktyczno – wychowawczych w bibliotece i w przygotowaniu imprez czytelniczych</li>
+										<li>- organizowanie różnorodnych działań rozwijających wrażliwość kulturową i społeczną</li>
+										<li>- przedstawianie radzie pedagogicznej sprawozdania z pracy biblioteki zawierającego ocenę stanu czytelnictwa, krótką charakterystykę przebiegu pracy i wynikające z niej wnioski</li>
+										<li>- współpracę z innymi bibliotekami</li>
+									</ul>
+								<li>2) W zakresie pracy organizacyjnej:</li>
+									<ul>
+										<li>- gromadzenie i ewidencję zbiorów</li>
+										<li>- konserwację i selekcję zbiorów</li>
+										<li>- opracowanie biblioteczne zbiorów</li>
+										<li>- organizację warsztatu informacyjnego</li>
+										<li>- organizację udostępniania zbiorów</li>
+									</ul>
+								<li>3) W zakresie współpracy z rodzicami i instytucjami  wychowania równoległego:</li>
+									<ul>
+										<li>- poradnictwo na temat wychowania czytelniczego w rodzinie, informowanie rodziców o czytelnictwie uczniów</li>
+										<li>- organizowanie, w miarę potrzeb i możliwości, wycieczek do bibliotek różnych sieci i ośrodków informacji</li>
+										<li>- uzyskiwanie i upowszechnianie materiałów informacyjnych i reklamowych oraz zachęcanie uczniów do udziału w imprezach czytelniczych</li>
+									</ul>							
+						</li>
+ 
+
+						<li>13. Z biblioteki szkolnej mogą korzystać wszyscy uczniowie, rodzice, nauczyciele i inni pracownicy szkoły.
+							<li>1)      Z biblioteki szkolnej mogą korzystać:</li>
+								<ul>
+									<li>- uczniowie szkół dla młodzieży i dorosłych na podstawie zapisów w dziennikach lekcyjnych i karty czytelnika biblioteki</li>
+									<li>- rodzice uczniów (karta czytelnika)</li>
+									<li>- nauczyciele (karta czytelnika)</li>
+									<li>- pozostali pracownicy  szkoły (karta czytelnika)</li>
+								</ul>
+						</li>
+ 
+
+						<li>14. Użytkownicy biblioteki, którzy przestają być uczniami, nauczycielami, pracownikami szkoły, zobowiązani są do rozliczenia się z biblioteką szkolną. Nauczyciel- bibliotekarz podpisuje kartę obiegową potwierdzającą zwrot dokumentów wypożyczonych w bibliotece lub do pracowni przedmiotowej.
+						</li>
+ 
+
+						<li>15. Użytkownicy biblioteki mają prawo do informacji i korzystania  nieodpłatnie ze wszystkich zasobów biblioteki.
+						</li>
+ 
+
+						<li>16. Czytelnicy mają prawo do bezpłatnego korzystania ze zbiorów bibliotecznych.
+						</li>
+ 
+						<li>17. Biblioteka udostępnia swoje zbiory w czasie zajęć dydaktycznych zgodnie z organizacją roku szkolnego.
+						</li>						
+
+						<li>18. Czytelnik odpowiada materialnie za wypożyczone przez siebie książki.
+						</li>
+ 
+						<li>19. W bibliotece należy zachować ciszę i porządek.
+						</li>
+ 
+						<li>20. Uczniom biorącym systematyczny udział w pracach biblioteki mogą być przyznane nagrody na koniec roku szkolnego.
+						</li>
+
+						<li>21. Zasady współpracy z uczniami:
+							<ul>
+								<li>- biblioteka szkolna jest miejscem przyjaznym i bezpiecznym dla  ucznia</li>
+								<li>- biblioteka szkolna stara się wspierać indywidualny rozwój ucznia przy ścisłej współpracy z pedagogiem szkolnym i nauczycielami</li>
+								<li>- biblioteka upowszechnia treści edukacji zdrowotnej przy współpracy z pielęgniarką szkolną  i w oparciu o program wychowawczy i profilaktyczny szkoły</li>
+								<li>- biblioteka pracuje nad kształtowaniem u uczniów postaw sprzyjających ich dalszemu rozwojowi indywidualnemu i społecznemu</li>
+								<li>- nauczyciele-Bibliotekarze starają się przeciwdziałać wszelkim formom dyskryminacji i upowszechniać wiedzę o prawach człowieka i ucznia</li>
+								<li>- uczniowie szkoły mogą rozwijać swoje zainteresowania poprzez udział w pracy Koła Biblioteki Szkolnej</li>
+								<li>- w bibliotece przestrzega się przepisów i zasad BHP</li>
+							</ul>
+						</li>
+							 
+
+						<li>22. Zasady współpracy z nauczycielami:
+							<ul>
+								<li>- wspieranie nauczycieli w ich pracy zawodowej i doskonaleniu własnym</li>
+								<li>- dostarczanie środków dydaktycznych</li>
+								<li>- wspieranie nauczyciela w procesie dydaktycznym i wychowawczym</li>
+								<li>- współpraca nauczycieli wszystkich przedmiotów z biblioteką, odwoływanie się do jej zasobów  i warsztatu informacyjno- bibliograficznego</li>
+								<li>- informowanie nauczycieli i wychowawców o stanie czytelnictwa uczniów</li>
+								<li>- uczestniczenie w organizacji imprez okolicznościowych zgodnie z zapisami w planie pracy szkoły</li>
+							</ul>
+						</li>
+							 
+
+						<li>23. Zasady współpracy z rodzicami:
+							<ul>
+								<li>- wspieranie rodziców w rozwiązywaniu problemów wychowawczych poprzez polecanie im odpowiedniej literatury</li>
+								<li>- popularyzowanie wiedzy pedagogicznej wśród rodziców</li>
+								<li>- informowanie rodziców o stanie czytelnictwa uczniów</li>
+							</ul>
+						</li>
+							 
+
+						<li>24. Zasady współpracy z innymi bibliotekami:
+							<ul>
+								<li>- wspólne organizowanie imprez czytelniczych</li>
+								<li>- wymiana wiedzy i doświadczeń</li>
+								<li>- wypożyczenia międzybiblioteczne</li>
+								<li>- udział w targach i kiermaszach</li>
+							</ul>
+						</li>
+					</ol>
+						</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">turned_in_not</i>
+								II. Regulamin wypożyczalni
+							<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+						</div>
+						<div class="collapsible-body">
+						<span>
+							<ol>
+								<li>1. Czytelnik może wypożyczać książki wyłącznie na swoje nazwisko.</li>
+								<li>2. Jednorazowo można wypożyczać 3 książki:
+									<ul>
+										<li>- lektury na okres 2 tygodni</li>
+										<li>- pozostałe na okres 1 miesiąca</li>
+									</ul>
+								</li>
+								<li>3. W uzasadnionych przypadkach bibliotekarz może ograniczyć lub zwiększyć liczbę wypożyczonych książek z podaniem terminu ich zwrotu.</li>
+								<li>4. Jeżeli czytelnik nie przeczytał książki, a wypożyczalnia nie ma na nią nowych zamówień można przynieść książkę i prosić o sprolongowanie terminu zwrotu.</li>
+								<li>5. Czytelnik może zarezerwować potrzebną  mu pozycję.</li>
+								<li>6. Korzystający z biblioteki zobowiązani są do dbałości o wypożyczone książki.</li>
+								<li>7. Wobec czytelników przetrzymujących książki stosuje się wstrzymanie wypożyczeń aż do momentu zwrócenia zaległych pozycji.</li>
+								<li>8. W przypadkach zniszczenia lub zagubienia książki czytelnik musi zwrócić taką samą lub inną pozycję wskazaną przez bibliotekarza.</li>
+								<li>9. Wszystkie wypożyczone książki powinny być zwrócone 2 tygodnie przed końcem roku szkolnego.</li>
+								<li>10. Czytelnicy (pracownicy, uczniowie) opuszczający szkołę zobowiązani są do zwrotu materiałów wypożyczonych z biblioteki.</li>
+							</ol>
+						</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">turned_in_not</i>
+								III. Regulamin czytelni
+							<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+						</div>
+						<div class="collapsible-body">
+						<span>
+							<ol>
+								<li>1. Korzystający z czytelni wpisuje się do zeszytu odwiedzin.</li>
+								<li>2. Przed wejściem do czytelni należy pozostawić (w wyznaczonym na to miejscu) teczki, książki i okrycia wierzchnie.</li>
+								<li>3. W czytelni można korzystać ze wszystkich zbiorów tj. z księgozbioru podręcznego, czasopism i zbiorów wypożyczalni.</li>
+								<li>4. Z księgozbioru podręcznego i czasopism można korzystać tylko na miejscu, nie wynosząc ich poza szkołę.</li>
+								<li>5. Czytelnik ma wolny dostęp do czasopism. Z księgozbioru podręcznego korzysta za pośrednictwem bibliotekarza.</li>
+								<li>6. Przed opuszczeniem czytelni należy zwrócić czytane książki bibliotekarzowi.</li>
+								<li>7. W czytelni obowiązuje cisza.</li>
+								<li>8. Nie wolno spożywać posiłków w czytelni.</li>
+								<li>9. Czytelnia jest nieczynna w czasie prowadzonych w niej zajęć dydaktycznych.</li>
+							</ol>
+						</span></div>
+					</li>					
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">turned_in_not</i>
+								IV. Korzystanie ze stanowisk komputerowych
+							<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+						</div>
+						<div class="collapsible-body">
+						<span>
+							<ol>
+								<li>1. Komputery w bibliotece przeznaczone są do celów edukacyjnych.</li>
+								<li>2. Stanowiska komputerowe umożliwiają korzystanie z programu MOL, ze zbiorów multimedialnych znajdujących się w bibliotece oraz Internetu.</li>
+								<li>3. Korzystać można tylko z zainstalowanych programów. Zabrania się instalowania innych programów i dokonywania zmian w już istniejących.</li>
+								<li>4. Z komputerów można korzystać jedynie za zgodą bibliotekarza, po wpisaniu się do zeszytu odwiedzin.</li>
+								<li>5. Użytkownik powinien umieć obsługiwać komputer przynajmniej w podstawowym zakresie.</li>
+								<li>6. Przy jednym stanowisku mogą przebywać jednocześnie najwyżej dwie osoby.</li>
+								<li>7. Internet powinien służyć wyłącznie do celów edukacyjnych.</li>
+								<li>8. Użytkownik odpowiada finansowo za wszelkie uszkodzenia sprzętu komputerowego i oprogramowania powstałe z jego winy. Jeśli jest niepełnoletni, wówczas odpowiedzialność ponoszą rodzice.</li>
+							</ol>
+						</span></div>
+					</li>
+				</ul>
+		<!-- Koniec collapsible -->
+		
+			
+		</div>
+		</div>
+
+        <!-- SOCIALS -->
+    <div class="social_icons center-align">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
+
+
+                <!-- FOOTER -->
+    <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
+    <footer class="page-footer">
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
+            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
+                <div class="col l6 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
+                    <p>ul.Kościuszki 26</p>
+                    <p>37-600 Lubaczów</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
+                    <div class="kontakt-footer">
+                        <p>Alicja Marciniszyn</p>
+                        <p>mgr Beata Strojna-Rozwód</p>
+                        <p>16 632 11 53</p>
+                        <p>sekretariat@lo-lubaczow.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright webdeveloperzy L.O Lubaczów
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- SKRYPTY -->
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script>
+    var width = screen.width;
+    $(".button-collapse ").sideNav();
+    $('.parallax').parallax();
+    var showNav = function() {
+        $('.button-collapse').sideNav('show');
+    }
+   
+    if (width > 992) {
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    } else {
+        $('.dropdown-button').dropdown({
+            hover: false, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    }
+    var openFixedButton = function(){
+        $('.tap-target').tapTarget('open');
+    }
+     
+
+    </script>
+    <script type="text/javascript">
+    function szukajka() {
+    var x = document.getElementById('szukaj');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    }
+    </script>
+    <script type="text/javascript">
+    var x = document.getElementById('szukaj2');
+        function szukajka2(){
+            if(x.style.display === 'none'){
+                x.style.display = 'block';
+            }else{
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script type="text/javascript ">
+    {
+        $('.carousel').carousel();
+
+    };
+    </script>   
+
+</html>

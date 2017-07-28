@@ -423,16 +423,13 @@ input[type=password]:focus:not([readonly]) {
     }
 }
 
-/* Regulamin*/
-
-.container h4
+.fa-chevron-down:
 {
-	text-align: center;
+	transition: all 0.5s ease;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
-
-
-
-
 
 
 
