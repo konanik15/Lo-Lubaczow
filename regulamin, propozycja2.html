@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>LO Lubaczów </title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBARY -->
+    <nav class="sticky">
+        <div class="nav-wrapper z-depth-5">
+            <a href="#!" class="brand-logo" id="logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" on-click="showNav()"><i class="fa fa-bars" style="font-size: 17px;" aria-hidden="true"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="action-btn" style="color: #f39c12">Szczęśliwe numerki:
+                    <a id="menu" class="waves-effect waves-light btn btn-floating pulse z-depth-3" ; " onclick="openFixedButton() ">
+             <i id="fixed-button-menu" class="fa fa-question" aria-hidden="true" style="border-radius: 50%; height: 40px; line-height: 1.75" ></i></a></li>
+                <li><a class="dropdown-button " data-activates='dropdown1' href="# ">O nas</a>
+                    <ul id='dropdown1' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">O szkole</a></li>
+                        <li><a href="#! ">Kadra/pracownicy</a></li>
+                        <li><a href="#! ">Klasy/profile</a></li>
+                        <li><a href="#! ">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Plan lekcji</a></li>
+                <li><a href="# ">Dziennik</a></li>
+                <li><a class="dropdown-button " data-activates='dropdown2' href="# ">Dla gimnazjalisty</a>
+                    <ul id='dropdown2' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Dlaczego my ?</a></li>
+                        <li><a href="#! ">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown3' href="# ">Dla ucznia</a>
+                    <ul id='dropdown3' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Samorząd uczniowski</a></li>
+                        <li><a href="#! ">Podręczniki</a></li>
+                        <li><a href="#! ">Matura</a></li>
+                        <li><a href="#! ">Stypendia</a></li>
+                        <li><a href="#! ">Galerie</a></li>
+                        <li><a href="#! ">//cos tam po rusku</a></li>
+                        <li><a href="#! ">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button " data-activates='dropdown4' href="# ">Dla rodzica</a>
+                    <ul id='dropdown4' class='dropdown-content z-depth-5'>
+                        <li><a href="#! ">Współpraca z rodzicami</a></li>
+                        <li><a href="#! ">Rada Rodziców</a></li>
+                        <li><a href="#! ">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="# ">Kontakt</a></li>
+                <li><a href="# " style="color: #fff !important;" onclick="szukajka()"><i class="material-icons left ">search</i></a></li>
+                 </li>
+            </ul>
+            <div id="szukaj" class="szukaj z-depth-4">
+                     <input type="text" class="szukaj-desktop" style="background-color: transparent !important; color: #000000" placeholder="Szukaj">
+            </div>
+      
+
+
+            <!-- MOBILNE -->
+            <ul class="side-nav" id="mobile-demo">
+                <li class="num-mobile center">Szczęśliwe numerki: <span style="font-family: 'Frijole', cursive;">5 | 15</span></li>
+                <li><a class="dropdown-button" data-activates='dropdown-1' href="#">O nas</a>
+                    <ul id='dropdown-1' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">O szkole</a></li>
+                        <li><a href="#!">Kadra/pracownicy</a></li>
+                        <li><a href="#!">Klasy/profile</a></li>
+                        <li><a href="#!">Dokumenty</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Plan lekcji</a></li>
+                <li><a href="#">Dziennik</a></li>
+                <li><a class="dropdown-button" data-activates='dropdown-2' href="#">Dla gimnazjalisty</a>
+                    <ul id='dropdown-2' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Dlaczego my ?</a></li>
+                        <li><a href="#!">Rekrutacja</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-3' href="#">Dla ucznia</a>
+                    <ul id='dropdown-3' class='dropdown-content z-depth-4'>
+                        <li><a href="#!">Samorząd uczniowski</a></li>
+                        <li><a href="#!">Podręczniki</a></li>
+                        <li><a href="#!">Matura</a></li>
+                        <li><a href="#!">Stypendia</a></li>
+                        <li><a href="#!">Galerie</a></li>
+                        <li><a href="#!">//cos tam po rusku</a></li>
+                        <li><a href="#!">Biblioteka</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-button" data-activates='dropdown-4' href="#">Dla rodzica</a>
+                    <ul id='dropdown-4' class='dropdown-content z-depth-4'>
+                        <li id="to"><a href="#!">Współpraca z rodzicami</a></li>
+                        <li><a href="#!">Konsultacje</a></li>
+                        <li><a href="#!">Rada Rodziców</a></li>
+                        <li><a href="#!">Regulamin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" style="color: #fff !important;" onclick="szukajka2()"><i class="material-icons left">search</i></a></li>
+                <li style="position: static;">
+                    <div id="szukaj2" class="szukaj center" style="position: inherit; margin-top: 10px;">
+                        <input type="text" class="szukaj-mobile" placeholder="Szukaj" style="position: inherit;">
+                        <button class="btn waves-effect waves-light center" id="submit" type="button" style="background-color: #f39c12; position: inherit;" ><i class="fa fa-paper-plane"></i>
+                </button>
+                    </div>
+                </li>
+            </ul>
+            
+
+
+            <div class="tap-target " data-activates="menu " style="background-color: #34363d !important; height: 40%; ">
+                <div class="tap-target-content center ">
+                    <h5>5</h5>
+                    <h5>15</h5>
+                </div>
+            </div>
+        </nav>
+                <!-- TUTAJ ŁADUJECIE CONTENT STRONY -->
+				
+
+	<div class="row" style="margin-bottom: 50px; padding-top: 0px;">
+        <div class="container" style="padding-top: 75px;">
+				<div class="row center">
+					<div class="section-title">
+						<h4>Regulamin</h4>
+					</div>
+				</div>
+	
+				<h4 style="text-align: center;">Regulamin Rady Rodziców działającej przy Liceum Ogólnokształcącym im. Tadeusza Kościuszki w Lubaczowie</h4>
+
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<ul class="collapsible" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header" onclick="regulamin()">
+						<i class="material-icons">turned_in_not</i>
+						I. Postanowienia ogólne
+						<i class="fa fa-chevron-down rotate" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. Rada Rodziców uczniów Liceum Ogólnokształcącego w Lubaczowie działa w oparciu o art. 53 i 54 ustawy z dnia 7 września 1991 r. o systemie oświaty (Dz.U. z 2004 r. Nr 25, poz. 2572, Nr 273, poz. 2703 i Nr 281, poz. 2781, z 2005 r. Nr 17, poz. 141, Nr 94, poz. 788, Nr 122, poz. 1020, Nr 131, poz. 1091, Nr 167, poz. 1400 i Nr 249, poz. 2104, z 2006 r. Nr 144, poz. 1043, Nr 208, poz. 1532 i Nr 227, poz. 1658 oraz z 2007 r. Nr 42, poz. 273 i Nr 80, poz. 542). <br />
+					2. Ww. reprezentacja przyjmuje nazwę: Rada Rodziców przy Liceum Ogólnokształcącym w Lubaczowie.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header" onclick="regulamin()">
+						<i class="material-icons">turned_in_not</i>
+							II. Skład i struktura Rady Rodziców
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. Rady oddziałowe (RO): <br />
+					1.1 Rady oddziałowe są reprezentacją rodziców danego oddziału (klasy). <br />
+					1.2 W skład rad oddziałowych wchodzi 3 rodziców uczniów danego oddziału.<br />
+					2. Rada Rodziców (RR): <br />
+					2.1 W skład Rady Rodziców wchodzi po jednym przedstawicielu rad oddziałowych.<br />
+					2.2 Regulaminowa liczba członków RR jest równa liczbie oddziałów (klas).<br />
+					3. Prezydium Rady Rodziców (PRR):<br />
+					3.1 Działalnością Rady Rodziców kieruje 3-5 osobowe prezydium składające się z:<br />
+					- przewodniczącego<br />
+					- zastępcy przewodniczącego<br />
+					- sekretarza <br />
+					- członków<br />
+					4. Komisja rewizyjna (KRRR):<br />
+					4.1 Pracę prezydium Rady kontroluje 3-osobowa komisja rewizyjna złożona z przewodniczącego i 2 członków.<br /></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							III. Wybory do RO, PRR i KR
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. Wybory do RO:<br />
+					1.1 Członkowie rad oddziałowych wybierani są na zebraniu rodziców danego oddziału (klasy) – jednego ucznia reprezentuje jeden rodzic – w głosowaniu tajnym.<br />
+					1.2 Członek rady oddziałowej, który w tajnym glosowaniu uzyskał największą liczbę głosów zostaje przedstawicielem rady oddziałowej (klasy) w Radzie Rodziców (art. 53 ust. 2 p.1).<br />
+					1.3 Wybory, o których mowa w pkt 1.1 odbywają się na pierwszym zebraniu rodziców danego oddziału (klasy) w każdym roku szkolnym.<br />
+					2. Wybory do Prezydium Rady Rodziców (PRR) i Komisji Rewizyjnej (KR):<br />
+					2.1 Wybory do PRR i KR odbywają się na plenarnym zebraniu RR, w obecności co najmniej połowy członków RR (połowy liczby przedstawicieli reprezentujących wszystkie RO (klasy), w głosowaniu tajnym.<br />
+					2.2 Zgłoszeni kandydaci muszą wyrazić ustną lub pisemną zgodę na kandydowanie.<br />
+					2.3 PRR i KR konstytuują się na swoim pierwszym posiedzeniu.<br />
+					2.4 Kadencja Rady Rodziców trwa jeden rok szkolny.<br /></span></div>
+				</li>				
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							IV. Tryb podejmowania uchwał przez RR, PRR i KRRR
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+						<span>1. Uchwały ww. organów podejmowane są zwykłą większością głosów w obecności co najmniej połowy regulaminowego składu danego organu.<br /></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							V. Kompetencje organów RR, PRR i KRRR
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. Kompetencje Rady Rodziców określa art. 54 ust. 1 i 2 ustawy o systemie oświaty przywołanej w pkt 1 Postanowień ogólnych niniejszego Regulaminu.<br />
+					2. Dodatkowo Rada Rodziców:<br />
+					- wybiera PRR i KRRR, a także powołuje i odwołuje poszczególnych jej członków<br />
+					- na podstawie sprawozdania PRR i KRRR udziela absolutorium PRR<br />
+					- zatwierdza plan dochodów i wydatków RR na dany rok szkolny<br />
+					- ustala wysokość proponowanej dobrowolnej darowizny- "składki" - na fundusz RR<br />
+					- wybiera przedstawicieli RR do zespołów i komisji powoływanych przez dyr. szkoły<br />
+					3. Prezydium Rady Rodziców (PRR):<br />
+					- reprezentuje RR przed dyrektorem szkoły i innymi organami szkoły, a także przed organem nadzorującym<br />
+					- opracowuje projekt planu dochodów i wydatków RR na dany rok 	szkolny oraz inne projekty uchwał dla RR<br />
+					- sporządza sprawozdanie z działalności PRR, w tym informację o wykonaniu planu dochodów i wydatków, w danym roku szkolnym i przedstawia je na zebraniu RR otwierającym nowy rok szkolny<br />
+					- zarządza funduszami RR, w oparciu o zatwierdzony przez RR plan dochodów i wydatków<br />
+					4. Komisja Rewizyjna Rady Rodziców (KRRR):<br />
+					- kontroluje działalność PRR, w tym zasadność wydatkowania środków z funduszu RR i jej zgodność z zatwierdzonym planem wydatków<br />
+					- po zakończeniu roku szkolnego przeprowadza kontrolę działalności PRR i sporządza protokół z tej kontroli, który przedstawia na zebraniu RR otwierającym nowy rok szkolny<br />
+					- w oparciu o wyniki kontroli jw. przedkłada RR projekt uchwały w sprawie udzielenia lub nieudzielenia absolutorium PRR.<br /></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							VI. Sposób pracy RR, PRR i KRRR
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. RR zbiera się co najmniej raz w roku na początku nowego roku szkolnego. Zebrania zwołują przewodniczący RR lub dyrektor szkoły. Informację o planowanych zebraniach RR przekazuje się zainteresowanym co najmniej 7 dni przed datą planowanego zebrania.<br />
+					2. Ramowy porządek zebrania plenarnego RR obejmuje:<br />
+					- wybór przewodniczącego i sekretarza zebrania (na zebraniu wyborczym, po zakończeniu kadencji PRR i KRRR)<br />
+					- sprawozdanie PRR i KRRR<br />
+					- informację dyrektora szkoły<br />
+					- dyskusję<br />
+					- uchwalenie planu dochodów i wydatków<br />
+					- powołanie komisji skrutacyjnej (na zebraniu wyborczym, po zakończeniu kadencji PRR i KRRR)<br />
+					- wybór nowych władz RR<br />
+					- składanie wniosków<br />
+					- podejmowanie uchwał.<br /></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							VII. Fundusze Rady Rodziców
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. RR gromadzi fundusze w celu wspierania działalności statutowej szkoły.<br />
+					2. Fundusze RR pochodzą z darowizn rodziców uczniów - "składek rodziców" - oraz innych darowizn, spadków, zasądzonych nawiązek itp.<br />
+					3. Środki finansowe RR przechowywane są na rachunku bankowym.<br />
+					4. Decyzje o wydatkowaniu środków RR podejmuje PRR w oparciu o zatwierdzony plan dochodów i wydatków na dany rok szkolny. Osobami uprawnionymi do dysponowania rachunkiem RR są przewodniczący i zastępca przewodniczącego RR.<br />
+					5. PRR przekazuje środki finansowe na rachunek środków specjalnych szkoły i określa cele, na które mają zostać przeznaczone.<br />
+					6. Dyrektor szkoły przedstawia PRR i KRRR rozliczenie (rachunki i faktury) z poszczególnych transz przekazanych środków.<br />
+					7. Obsługę finansowo-księgową RR zapewnia dyrektor szkoły.<br /></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">turned_in_not</i>
+							VIII. Postanowienia końcowe
+						<i class="fa fa-chevron-down" style="float: right; font-size: 17px;" aria-hidden="true"></i>
+					</div>
+					<div class="collapsible-body">
+					<span>1. Członkowie wszystkich organów RR pełnią swoje funkcje społecznie.<br />
+					2. Terminy zebrań RR i PRR i KRRR ogłasza się na tablicy ogłoszeń w szkole i stronie internetowej szkoły.<br />
+					3. W ww. sposób, na początku nowego roku szkolnego, ogłaszane jest sprawozdanie z działalności RR przygotowane przez PRR.<br />
+					Niniejszy Regulamin został uchwalany na zebraniu Rady Rodziców
+					23 września 2007.<br /></span></div>
+				</li>
+			</ul>
+	
+		
+        </div>
+	</div>
+
+
+
+        <!-- SOCIALS -->
+    <div class="social_icons center-align">
+        <ul class="center-align" style="display: inline-flex;">
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasz Facebook!" style="margin-right: 10px;"><i id="fb" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="top" data-tooltip="Nasza dawna strona!"><i id="home" class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+            
+        </ul>
+    </div>
+
+
+                <!-- FOOTER -->
+    <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
+    <footer class="page-footer">
+    <div class="row" style="padding-top: 0; margin-bottom: 0;">
+    <div class="col s0 m2 l2">
+    </div>
+
+        <div class="container col s10 m12 l12">
+            <div class="row" style="padding-top: 15px !important; padding-bottom: 10px !important; margin-bottom: 0px !important;">
+                <div class="col l6 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-map-marker" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Adres</h5>
+                    <p>ul.Kościuszki 26</p>
+                    <p>37-600 Lubaczów</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="footer-prawo">
+                    <h5 class="white-text"><i class="fa fa-phone" aria-hidden="true" style="color: #f39c12; padding: 10px;"></i>Sekretariat</h5>
+                    <div class="kontakt-footer">
+                        <p>Alicja Marciniszyn</p>
+                        <p>mgr Beata Strojna-Rozwód</p>
+                        <p>16 632 11 53</p>
+                        <p>sekretariat@lo-lubaczow.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col s0 m2 l2">
+    </div>
+    </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright webdeveloperzy L.O Lubaczów
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- SKRYPTY -->
+    <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript">
+		function regulamin()
+		{
+			$(".rotate").toggleClass("down");
+		}
+	</script>
+    <script>
+    var width = screen.width;
+    $(".button-collapse ").sideNav();
+    var showNav = function() {
+        $('.button-collapse').sideNav('show');
+    }
+   
+    if (width > 992) {
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    } else {
+        $('.dropdown-button').dropdown({
+            hover: false, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            // constrainWidth: true,
+
+        });
+    }
+    var openFixedButton = function(){
+        $('.tap-target').tapTarget('open');
+    }
+     
+
+    </script>
+    <script type="text/javascript">
+    function szukajka() {
+    var x = document.getElementById('szukaj');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    }
+    </script>
+    <script type="text/javascript">
+    var x = document.getElementById('szukaj2');
+        function szukajka2(){
+            if(x.style.display === 'none'){
+                x.style.display = 'block';
+            }else{
+                x.style.display = 'none';
+            }
+        }
+    </script>  		
+</html>
