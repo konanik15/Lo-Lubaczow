@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="pl">
+<html lang="pl" style="height: 100%;">
 
 <head>
     <meta charset="utf-8" />
@@ -19,7 +19,9 @@
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 
-<body>
+<body style="height: 100%; display: flex;
+  flex-direction: column;">
+<div class="content1">
     <!-- NAVBARY -->
     <nav class="sticky">
         <div class="nav-wrapper z-depth-5">
@@ -130,26 +132,18 @@
             </div>
         </nav>
                 <!-- TUTAJ ŁADUJECIE CONTENT STRONY -->
-            
-      <div class="row center" style="margin-top: 15px;">
-            <div class="title22"> 
-            <img src="img/tab.png" width="280" height="155"/>
-                <div class="text-head">
-                    <div class="text-head2">Podręczniki</div>
-                </div>
-            </div>  
-        </div>  
-  <!-- 
-    <div class="col s12 m6" style="width: 80%;  margin-left: auto; margin-right: auto;">
-      <div class="card" style="height: 200px !important; text-align: center;">
-        <div class="card-content" style="text-align: center; font-size: 25px;">
-          <p><b>Spis podręczników obowiązujących w roku szkolnym 2017/2018 </b></p>
+         <div class="row center">
+        <div class="section-title" style="padding-top: 30px;">
+            <h4>Podręczniki</h4>
         </div>
-          <a class="waves-effect waves-light btn button-more">Pobierz</a>
-      </div>
-    </div>
-    -->
-    
+    </div>    
+         <h5 style="text-align: center;"><b>Spis podręczników obowiązujących w roku szkolnym 2017/2018</b></h5>
+         <div class="card-action" >
+                        <a class="waves-effect waves-light btn button-more" style="border-radius: 10px;">Pobierz</a>
+                    </div>
+     
+
+</div>
     <!-- SOCIALS -->
     <div class="social_icons center-align">
         <ul class="center-align" style="display: inline-flex;">
@@ -161,7 +155,7 @@
 
                 <!-- FOOTER -->
     <!-- jeśli content jest mniejszy niż height ekranu, dopisz do tej klasy inline position:fixed; bottom 0;  :)-->
-    <footer class="page-footer" style="position: fixed; bottom: 0;">
+    <footer class="page-footer">
     <div class="row" style="padding-top: 0; margin-bottom: 0;">
     <div class="col s0 m2 l2">
     </div>
