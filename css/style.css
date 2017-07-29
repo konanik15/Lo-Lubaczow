@@ -495,35 +495,7 @@ input.select-dropdown{
 }
 .document
 {
-    padding: 3px;
+    padding: 6px;
+    padding-bottom: 0;
 }
 
-/* TABLICA-TITLE*/
-.title22
-{
-    position: relative;
-    width:280px;
-    height:155px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-}
-.text-head
-{ 
-    width: 280px;
-    text-align: center;
-    height: 155px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    }
-.text-head2 
- { 
-    color: #ffffff;
-    margin: 0;
-    font-family: 'Finger Paint', cursive;
-    font-size: 38px;
-    padding-top: 20px;
- }
- 
