@@ -629,6 +629,21 @@ nav .brand-logo {
 {
     margin-bottom: 0px !important;
 }
+/* |||||||||||||| GALERIA KLASOWA |||||||||||||| */
+#galeria-klasowa-container
+{
+    margin-top: 64px;
+}
+#galeria-klasowa-container img
+{
+    display: block;
+}
+#galeria-klasowa-container .block
+{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+}
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
