@@ -132,91 +132,29 @@
             </div>
         </nav>
                 <!-- TUTAJ ŁADUJECIE CONTENT STRONY -->
-            
-        <div class="row center">
+         <div class="row center">
         <div class="section-title" style="padding-top: 30px;">
-            <h4>Dokumenty</h4>
+            <h4>Skład Rady Rodziców</h4>
         </div>
-    </div>    
-            <ul class="collapsible popout" data-collapsible="accordion" style="width: 90%; margin-left: auto; margin-right: auto;">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">assignment</i>Statuty / Regulaminy</div>
-      <div class="collapsible-body">
-       <div class="document">
-            <p class="content-document">Statut szkoły</p>
-            <a class="waves-effect waves-light btn button-more">Pobierz<i class="fa fa-paper-plane" style="padding-left: 10px;"></i></a>
-             </div>
-        
-           <div class="document">
-           <p class="content-document">Regulamin</p>
-           <a class="waves-effect waves-light btn button-more">Pobierz<i class="large material-icons">file_download</i></a>
-                 </div>
-            <div class="document">
-            Wewnątrzszkolny system oceniania
-            
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons">file_download</i></a>
-                 </div>
-            <div class="document">
-            Zasady ustalania i kryteria oceny zachowania
-           
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-                 </div>
-            <div class="document">
-            Szkolny program wychowawczy
-            
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
+        </div>    
+        <h6 style="text-align: center; color: #000000;"><b>Rada Rodziców składa się z przedstawicieli wszystkich klas.</b></h6>
+        <h6 style="text-align: center; color: #000000; padding-bottom: 10px;"><b>Pracami Rady Rodziców kieruje Prezydium, wybierane na Walnym Zebraniu RR z początkiem każdego roku szkolnego.</b></h6>
+
+          <!-- Modal Trigger -->
+          <div style="text-align: center;">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Uwaga !!!</a>
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal" style="background-color: #f39c12; border-radius: 10px;">
+                <div class="modal-content" style="padding:5px; padding-top: 20px; padding-bottom: 20px;">
+                  <h5 t>Decyzją Rady Rodziców minimalna roczna składka wynosi 40 zł</h5>
+                  <p style="text-align: center; font-size: 15px;">Za wszystkie dokonane wpłaty dziękujemy</p>
                 </div>
-            <div class="document">
-            Program profilaktyki
-           
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-                 </div>
-            <div class="document">
-            Regulamin Samorządu Uczniowskiego
-           
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-                 </div>
-      </div>
+              </div>
+          </div>
+          
 
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">assignment</i>Wycieczki Szkolne</div>
-      <div class="collapsible-body">
-           <div class="document">
-            Regulamin wycieczek szkolnych
-            </div>
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-            <div class="document">
-            Zgoda rodziców 
-            </div>
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-            <div class="document">
-            Lista uczestników wycieczki
-            </div>
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">assignment</i>Dla Rodzica</div>
-      <div class="collapsible-body">
-           <div class="document">
-            Procedura współpracy z rodzicami
-            </div>
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">assignment</i>Inne</div>
-      <div class="collapsible-body">
-          <div class="document">
-            Podanie o duplikat dokumentu
-            </div>
-                <a class="btn-floating  waves-effect waves-light"><i class="material-icons" title="Pobierz">file_download</i></a>
-      </div>
-    </li>
-  </ul>
 </div>
-
     <!-- SOCIALS -->
     <div class="social_icons center-align">
         <ul class="center-align" style="display: inline-flex;">
@@ -265,6 +203,13 @@
 <!-- SKRYPTY -->
     <script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.min.js "></script>
-    <script type="text/javascript" src="js/script.js"></script>   
+    <script type="text/javascript" src="js/script.js"></script>  
+    <script type="text/javascript">
+     $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+     </script> 
+     
 
 </html>

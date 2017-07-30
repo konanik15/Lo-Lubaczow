@@ -483,6 +483,7 @@ input.select-dropdown{
 .collapsible-header
 {
     padding-right: 1px !important;
+    font-size: 20px;
 }
 .collapsible-body
 {
@@ -498,4 +499,9 @@ input.select-dropdown{
     padding: 6px;
     padding-bottom: 0;
 }
-
+.content-document
+{
+    display: block;
+    margin: 0;
+    margin-top: 5px;
+}
