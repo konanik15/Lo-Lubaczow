@@ -583,6 +583,50 @@ nav .brand-logo {
 {
     text-align: center;
 }
+/* |||||||||||||| NEWS-PODGLĄD |||||||||||||||| */
+#news-outlook-container
+{
+    margin-top: 100px;
+}
+#news-outlook-container .card
+{
+    padding-bottom: 40px;
+}
+#news-outlook-container h5
+{
+    font-size: 29px !important;
+}
+#news-outlook-container .date
+{
+    margin:5px 0;
+    padding-top: 0;
+}
+#news-outlook-container #news-img img
+{
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+}
+#news-outlook-container .btn
+{
+    margin:10px;
+}
+#galeria-artykułu-container img
+{
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+    width:90%;
+    margin-bottom: 5px;
+}
+#galeria-artykułu-container .col
+{
+    padding: 0 !important;
+}
+#galeria-artykułu-container .row
+{
+    margin-bottom: 0px !important;
+}
+#galeria-artykułu-container h5
+{
+    text-align: center;
+}
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
 input[type=text]:focus:not([readonly]),
