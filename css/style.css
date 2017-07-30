@@ -596,6 +596,12 @@ nav .brand-logo {
 {
     font-size: 29px !important;
 }
+#news-outlook-container h6
+{
+    color: #000000;
+    font-size: 24px;
+    font-weight:800;
+}
 #news-outlook-container .date
 {
     margin:5px 0;
@@ -622,10 +628,6 @@ nav .brand-logo {
 #galeria-artykułu-container .row
 {
     margin-bottom: 0px !important;
-}
-#galeria-artykułu-container h5
-{
-    text-align: center;
 }
 /* |||||||||||||| ADMIN FORMULARZ |||||||||||||| */
 
@@ -743,8 +745,8 @@ input[type=password]:focus:not([readonly]) {
     .card-content #test4 ol,#test5 ol,#test6 ol {
         padding:0;
     }
-}
 
+}
 @media(max-width: 515px) {
     .galeryjne {
         width: 400px !important;
@@ -753,6 +755,12 @@ input[type=password]:focus:not([readonly]) {
     /*REKRUTACJA-MOBILE */
     .collapsible-row .col {
     padding:0 !important;
+    }
+    /* WYCENTROWANIE NEWS IMG */
+        #news-outlook-container #news-img img {
+        margin-left:30%;
+        margin-right:30%;
+        width: 40%;
     }
 }
 
