@@ -242,6 +242,7 @@ nav .brand-logo {
 }
 .oferta-img {
     margin-bottom: 30px;
+    width: 68%;
 }
 
 /* WSPÓŁPRACA */
@@ -249,6 +250,13 @@ nav .brand-logo {
     background-color: #f5f5f5 !important;
     padding-top: 70px;
     padding-bottom: 0px;
+}
+#wspolpracacard {
+    width: 70% !important;
+    height: 100% !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0 !important;
 }
 
 /* STYLE SAMORZAD */
@@ -263,7 +271,7 @@ nav .brand-logo {
     height: 100% !important;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
     margin-top: 45px;
 }
 .samorzadpage{
@@ -282,7 +290,7 @@ nav .brand-logo {
     height: 100% !important;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 0 !important;
+    margin-bottom: 50px !important;
     margin-top: 45px;
 }
 
@@ -291,7 +299,7 @@ blockquote {
     padding-left: 1.5rem;
     border-left: 5px solid #f39c12 !important;
 }
-.kontakt.maps{
+.kontakt-maps{
     text-align: center;
 }
 
@@ -461,6 +469,15 @@ input[type=text].valid{
     .onas #onascard {
         width: 100% !important;
     }
+    .samorzad #samorzadcard{
+        width: 95% !important;
+    }
+    .kontakt #kontaktcard{
+        width: 95% !important;
+    }
+    .wspolpraca #wspolpracacard {
+        width: 100% !important;
+    }
 }
 
 @media(max-width: 515px) {
@@ -506,5 +523,11 @@ input[type=text].valid{
     .galeryjne {
         width: 400px !important;
         height: 280px !important;
+    }
+}
+
+@media(max-width: 600px) {
+    .kontakt #kontakt-maps {
+        width: 300px !important;
     }
 }
