@@ -504,3 +504,13 @@ input.select-dropdown{
     margin: 0;
     margin-top: 5px;
 }
+/*RADA RODZIOÓW*/
+#rada-rodzicow
+{
+     margin-left: auto;
+     margin-right: auto; 
+     text-align: center; 
+     color: #000000;
+      width: 80%;
+      padding-bottom: 10px;
+}
