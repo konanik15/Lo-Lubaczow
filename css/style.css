@@ -361,6 +361,44 @@ input[type=password]:focus:not([readonly]) {
     transform:rotate(180deg);
 }
 
+/* Matura */
+
+.maturaheader h5
+{
+	 text-align: center; 
+	 font-size: 28px;
+}
+
+.maturaprzedmioty
+{
+	text-align: center;
+	color: #f39c12;
+	font-size: 17px;
+}
+
+.maturatable h5
+{
+	text-align: center;
+	color: #f39c12;
+}
+
+.kolorek
+{
+	color: #f39c12 !important;
+}
+
+.kolorekzal
+{
+	color: #34363d !important;
+}
+
+.zalacznikiheader h5
+{
+	 text-align: center; 
+	 font-size: 30px; 
+	 color: #f39c12;
+}
+
 /* media queries */
 
 @media(max-width: 992px) {
